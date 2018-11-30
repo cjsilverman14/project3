@@ -15,4 +15,7 @@ public class Warehouse
     public void addCargo(Cargo c){
         incomingCargo.add(c);
     }
+    public void cargoSort(){
+        Collections.sort(incomingCargo);
+    }
 }

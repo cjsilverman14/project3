@@ -13,7 +13,7 @@ public class ExperimentController
     public ExperimentController(){
         center = "A";
     }
-    public void shortestPath(){
+    public void shortestPath(String city){
         cityMap.shortestPath(center);
     }
     public void setCenterShortestPath(){
@@ -23,6 +23,7 @@ public class ExperimentController
         ExperimentController ec = new ExperimentController();
         ec.mapCity();
         ec.setCenterShortestPath();
+        
     }
     public void mapCity(){
         try{
@@ -57,6 +58,7 @@ public class ExperimentController
                 int weight = Integer.parseInt(line);
                 Cargo c = new Cargo(weight,destination,id);
                 w.addCargo(c);
+                w.cargoSort();
                 cargoList.add(w);
                 cityMap.setWarehouse(w);
             }

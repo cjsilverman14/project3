@@ -7,12 +7,24 @@ import java.util.*;
  */
 public class Shipment
 {
-    String destination;
+    City destination;
     ArrayList<Cargo> shipmentCargo = new ArrayList<Cargo>();
     int weight;
-    public Shipment(String d){
+    int distance;
+    public Shipment(City d){
         destination = d;
         weight = 0;
+    }
+    @Override
+    public String toString(){
+        String cargoLine = "";
+        for(int i = 0;i<shipmentCargo.size();i++){
+            cargoLine+= shipmentCargo.get(i).toString();
+            if(i!=shipmentCargo.size()-1){
+                cargoLine+=", ";
+            }
+        }
+        return("Deliver to warehouse " + destination.name + "total weight: " + weight + "([" + cargoLine + "]) dist: ");
     }
     public boolean addCargo(Cargo c){
         if(weight + c.weight > 500){
@@ -20,5 +32,11 @@ public class Shipment
         }
         shipmentCargo.add(c);
         return true;
+    }
+    public void setDistance(){
+        distance = destination.dist;
+    }
+    public int getReturnDist(){
+        return destination.centerDist;
     }
 }

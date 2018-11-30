@@ -5,7 +5,7 @@
  * @author (your name)
  * @version 11/30/18
  */
-public class Cargo
+public class Cargo implements Comparable<Cargo>
 {
     int weight;
     String destination;
@@ -18,6 +18,10 @@ public class Cargo
     
     @Override
     public String toString(){
-        return(destination + "[" + ID + "] " + weight);
+        return(destination + "(" + ID + "): " + weight);
+    }
+    
+    public int compareTo(Cargo c){
+        return weight-c.weight;
     }
 }
