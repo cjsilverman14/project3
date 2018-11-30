@@ -1,0 +1,63 @@
+Truck 1:
+
+Deliver to warehouse B total weight: 369 ([B(2): 369]) dist: 12
+
+Deliver to warehouse E total weight: 97 ([E(7): 48, E(5): 49]) dist: 11
+
+Distance traveled 46
+
+Truck 2:
+
+Deliver to warehouse B total weight: 410 ([B(1): 410]) dist: 12
+
+Distance traveled 24
+
+Truck 3:
+
+Deliver to warehouse E total weight: 414 ([E(6): 122, E(3): 136, E(1): 156]) dist: 23
+
+Distance traveled 46
+
+Truck 4:
+
+Deliver to warehouse E total weight: 255 ([E(8): 255]) dist: 23
+
+Deliver to warehouse D total weight: 128 ([D(3): 128]) dist: 34
+
+Distance traveled 86
+
+Truck 5:
+
+Deliver to warehouse E total weight: 293 ([E(2): 293]) dist: 23
+
+Deliver to warehouse D total weight: 174 ([D(1): 174]) dist: 34
+
+Distance traveled 86
+
+Truck 6:
+
+Deliver to warehouse E total weight: 320 ([E(4): 320]) dist: 23
+
+Distance traveled 46
+
+Truck 7:
+
+Deliver to warehouse D total weight: 452 ([D(4): 213, D(2): 239]) dist: 29
+
+Distance traveled 58
+
+Truck 8:
+
+Deliver to warehouse D total weight: 291 ([D(5): 291]) dist: 29
+
+Deliver to warehouse F total weight: 181 ([F(2): 181]) dist: 39
+
+Distance traveled 116
+
+Truck 9:
+
+Deliver to warehouse F total weight: 318 ([F(1): 318]) dist: 48
+
+Distance traveled 96
+
+Total distance traveled: 604
