@@ -1,4 +1,4 @@
-
+import java.util.*;
 /**
  * Write a description of class Shipment here.
  *
@@ -7,5 +7,7 @@
  */
 public class Shipment
 {
+    String destination;
+    ArrayList<Cargo> shipmentCargo = new ArrayList<Cargo>();
     
 }
