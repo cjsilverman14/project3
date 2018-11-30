@@ -120,6 +120,30 @@ public class Graph {
       }
     }
   }
+  public void shortestPath(String startCity,int x){
+      this.shortestPath(this.getVertex(startCity),x);
+    }
+  public void shortestPath(City startVertex,int x) {
+    reset();
+    PriorityQueue<City> q = new PriorityQueue<City>();
+    q.add(startVertex);
+    startVertex.centerDist = 0;
+    
+    while (!q.isEmpty()) {
+      City u = q.poll();
+      if (u.visited) continue;
+      u.visited = true;
+      System.out.println(u.name + " " + u.centerDist + " " + ((u.prev==null)?"":u.prev.name));
+      for (Road e: u.nbs) {
+        City v = e.v;
+        if (v.centerDist > u.centerDist + e.w) {
+          v.centerDist = u.centerDist + e.w;
+          v.prev = u;
+          q.add(v);
+        }
+      }
+    }
+  }
   
   public int returnDist(String s){
       City c = getVertex(s);

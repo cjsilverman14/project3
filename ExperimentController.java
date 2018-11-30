@@ -16,10 +16,13 @@ public class ExperimentController
     public void shortestPath(){
         cityMap.shortestPath(center);
     }
+    public void setCenterShortestPath(){
+        cityMap.shortestPath(center,0);
+    }
     public static void main(String[] args){
         ExperimentController ec = new ExperimentController();
         ec.mapCity();
-        ec.shortestPath();
+        ec.setCenterShortestPath();
     }
     public void mapCity(){
         try{
