@@ -3,7 +3,7 @@ import java.util.*;
  * Write a description of class Shipment here.
  *
  * @author (your name)
- * @version (a version number or a date)
+ * @version 11/30/18
  */
 public class Shipment
 {

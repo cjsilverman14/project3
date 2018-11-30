@@ -3,7 +3,7 @@
  * Write a description of class Cargo here.
  *
  * @author (your name)
- * @version (a version number or a date)
+ * @version 11/30/18
  */
 public class Cargo
 {
