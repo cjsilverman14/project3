@@ -20,6 +20,4 @@ public class Cargo
     public String toString(){
         return(destination + "[" + ID + "] " + weight);
     }
-    
-    //Test Test Test
 }
