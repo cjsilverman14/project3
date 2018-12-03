@@ -10,6 +10,7 @@ public class ExperimentController
 {
     Graph cityMap = new Graph();;
     String center;
+    ArrayList<Warehouse> cargoList;
     public ExperimentController(){
         center = "A";
     }
@@ -21,30 +22,54 @@ public class ExperimentController
     }
     public static void main(String[] args){
         ExperimentController ec = new ExperimentController();
-        ArrayList<Warehouse> cargoList = ec.mapCity();
-        Collections.sort(cargoList);
+        ec.cargoList = ec.mapCity();
+        for(Warehouse w : ec.cargoList){
+            System.out.println(w.city);
+        }
+        Collections.sort(ec.cargoList);
+        for(Warehouse w : ec.cargoList){
+            System.out.println(w.city);
+        }
         ec.setCenterShortestPath();
+        ArrayList<Truck> dispatch = new ArrayList<Truck>();
         int truckNumber=1;
-        while(!cargoList.isEmpty()){
+        while(!ec.cargoList.isEmpty()){
             Truck t = new Truck(truckNumber);
+            truckNumber++;
+            Shipment s = new Shipment(ec.cargoList.get(0).city,500);
             while(!t.truckReady){
                 boolean shipmentCheck = false;
-                Shipment s = new Shipment(cargoList.get(0).city,500);
+                s.setDestination(ec.cityMap.getVertex(s.location));
                 s.destination.setClosestCities(ec.cityMap.shortestPath(s.destination));
                 while(!shipmentCheck){
-                    if(cargoList.get(0).incomingCargo.isEmpty()){
-                        cargoList.remove(0);
+                    if(ec.cargoList.get(0).incomingCargo.isEmpty()){
+                        ec.cargoList.remove(0);
                         shipmentCheck = true;
                         continue;
                     }
-                    Cargo c = cargoList.get(0).incomingCargo.remove(0);
+                    Cargo c = ec.cargoList.get(0).incomingCargo.remove(0);
                     if(!s.addCargo(c)){
-                        cargoList.get(0).incomingCargo.add(0,c);
+                        ec.cargoList.get(0).incomingCargo.add(0,c);
                         shipmentCheck = true;
                     }
                 }
                 t.addShipment(s);
+                t.truckReady = true;
+                for(City c : s.destination.closestCities){
+                    if(c.hasWarehouse){
+                        if(c.cityWarehouse.incomingCargo.get(0).weight <= 500-t.weight){
+                            t.truckReady = false;
+                            s = new Shipment(c.name,500-t.weight);
+                        }
+                    }
+                }
+                
             }
+            t.returnTrip();
+            dispatch.add(t);
+        }
+        for(Truck t : dispatch){
+            System.out.println(t);
         }
     }
     public ArrayList<Warehouse> mapCity(){
@@ -83,15 +108,30 @@ public class ExperimentController
                 w.cargoSort();
                 cargoList.add(w);
                 cityMap.setWarehouse(w);
-                return cargoList;
+                
             }
+            Collections.sort(cargoList);
+            return cargoList;
         }
         catch(Exception e){
             
             System.out.println(e);
             return null;
         }
-        return null;
     
+    }
+    public void sortWarehouses(){
+        LinkedList<Warehouse> l1 = new LinkedList<Warehouse>();
+        LinkedList<Warehouse> l2 = new LinkedList<Warehouse>();
+        int count = 0;
+        for(int i = 0;i<(cargoList.size()/2);i++){
+            l1.add(cargoList.get(count));
+            count++;
+        }
+        for(int i = 0;i<(cargoList.size()-l1.size());i++){
+            l2.add(cargoList.get(count));
+            count++;
+        }
+        cargoList = mergeSort(l1,l2);
     }
 }

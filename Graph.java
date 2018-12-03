@@ -21,7 +21,7 @@ public class Graph {
     }
 
     // retrieve vertex associated with the given name
-    private City getVertex(String name) {
+    public City getVertex(String name) {
         City v = vertexMap.get(name);
         if (v == null) {
             v = new City(name);
@@ -134,17 +134,19 @@ public class Graph {
         reset();
         PriorityQueue<City> q = new PriorityQueue<City>();
         q.add(startVertex);
+        startVertex.dist = 0;
         startVertex.centerDist = 0;
 
         while (!q.isEmpty()) {
             City u = q.poll();
             if (u.visited) continue;
             u.visited = true;
-            System.out.println(u.name + " " + u.centerDist + " " + ((u.prev==null)?"":u.prev.name));
+            System.out.println(u.name + " " + u.dist + " " + ((u.prev==null)?"":u.prev.name));
             for (Road e: u.nbs) {
                 City v = e.v;
-                if (v.centerDist > u.centerDist + e.w) {
-                    v.centerDist = u.centerDist + e.w;
+                if (v.dist > u.dist + e.w) {
+                    v.dist = u.dist + e.w;
+                    v.centerDist = u.dist + e.w;
                     v.prev = u;
                     q.add(v);
                 }

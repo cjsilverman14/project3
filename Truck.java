@@ -10,6 +10,7 @@ public class Truck
     int truckNumber;
     int distanceTraveled;
     boolean truckReady = false;
+    int weight = 0;
     ArrayList<Shipment> shipList = new ArrayList<Shipment>();
     public Truck(int t){
         truckNumber = t;
@@ -20,6 +21,7 @@ public class Truck
         for(Shipment s : shipList){
             shipmentLines+=s.toString();
             shipmentLines+="\n";
+            distanceTraveled += s.distance;
         }
         return("Truck " + truckNumber + ":\n" + shipmentLines);
     }
@@ -28,9 +30,10 @@ public class Truck
     }
     public void addShipment(Shipment s){
         shipList.add(s);
+        weight+=s.weight;
     }
-    public int returnTrip(){
-        return shipList.get(shipList.size()-1).getReturnDist();
+    public void returnTrip(){
+        distanceTraveled+= shipList.get(shipList.size()-1).getReturnDist();
     }
     //Test test test
 }

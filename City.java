@@ -34,6 +34,7 @@ public class City implements Comparable<City>
     public void setWarehouse(Warehouse w){
         cityWarehouse = w;
         w.location = this;
+        hasWarehouse = true;
     }
     
     public void setClosestCities(ArrayList<City> cityList){
