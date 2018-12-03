@@ -8,7 +8,7 @@ import java.io.*;
  */
 public class ExperimentController
 {
-    Graph cityMap = new Graph();;
+    Graph cityMap = new Graph();
     String center;
     ArrayList<Warehouse> cargoList;
     public ExperimentController(){
@@ -44,8 +44,13 @@ public class ExperimentController
             while(!t.truckReady){
                 boolean shipmentCheck = false;
                 s.setDestination(ec.cityMap.getVertex(s.location));
+                for(City c : ec.cityMap.shortestPath(s.destination)){
+                    System.out.println(c.name);
+                }
                 s.destination.setClosestCities(ec.cityMap.shortestPath(s.destination));
                 while(!shipmentCheck){
+                    //This needs to be changed not only to access the first warehouse
+                    //In the list
                     if(ec.cargoList.get(0).incomingCargo.isEmpty()){
                         ec.cargoList.remove(0);
                         shipmentCheck = true;
@@ -58,6 +63,7 @@ public class ExperimentController
                     }
                 }
                 t.addShipment(s);
+                shipmentCheck = false;
                 t.truckReady = true;
                 for(City c : s.destination.closestCities){
                     if(c.hasWarehouse){

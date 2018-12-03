@@ -13,7 +13,7 @@ public class City implements Comparable<City>
     int centerDist = Integer.MAX_VALUE;
     boolean visited = false;
     boolean hasWarehouse = false;
-    boolean shortestSet = true;
+    boolean shortestSet = false;
     Warehouse cityWarehouse;
     ArrayList<City> closestCities = new ArrayList<City>();
     City prev;
@@ -39,5 +39,6 @@ public class City implements Comparable<City>
     
     public void setClosestCities(ArrayList<City> cityList){
         closestCities = cityList;
+        shortestSet = true;
     }
 }
