@@ -8,11 +8,14 @@ import java.util.*;
 public class Shipment
 {
     City destination;
+    String location;
     ArrayList<Cargo> shipmentCargo = new ArrayList<Cargo>();
     int weight;
+    int maxWeight;
     int distance;
-    public Shipment(City d){
-        destination = d;
+    public Shipment(String l,int max){
+        location = l;
+        maxWeight = max;
         weight = 0;
     }
     @Override
@@ -27,11 +30,14 @@ public class Shipment
         return("Deliver to warehouse " + destination.name + "total weight: " + weight + "([" + cargoLine + "]) dist: ");
     }
     public boolean addCargo(Cargo c){
-        if(weight + c.weight > 500){
+        if(weight + c.weight > maxWeight){
             return false;
         }
         shipmentCargo.add(c);
         return true;
+    }
+    public void setDestination(City d){
+        destination = d;
     }
     public void setDistance(){
         distance = destination.dist;

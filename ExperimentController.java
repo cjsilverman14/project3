@@ -21,11 +21,33 @@ public class ExperimentController
     }
     public static void main(String[] args){
         ExperimentController ec = new ExperimentController();
-        ec.mapCity();
+        ArrayList<Warehouse> cargoList = ec.mapCity();
+        Collections.sort(cargoList);
         ec.setCenterShortestPath();
-        
+        int truckNumber=1;
+        while(!cargoList.isEmpty()){
+            Truck t = new Truck(truckNumber);
+            while(!t.truckReady){
+                boolean shipmentCheck = false;
+                Shipment s = new Shipment(cargoList.get(0).city,500);
+                s.destination.setClosestCities(ec.cityMap.shortestPath(s.destination));
+                while(!shipmentCheck){
+                    if(cargoList.get(0).incomingCargo.isEmpty()){
+                        cargoList.remove(0);
+                        shipmentCheck = true;
+                        continue;
+                    }
+                    Cargo c = cargoList.get(0).incomingCargo.remove(0);
+                    if(!s.addCargo(c)){
+                        cargoList.get(0).incomingCargo.add(0,c);
+                        shipmentCheck = true;
+                    }
+                }
+                t.addShipment(s);
+            }
+        }
     }
-    public void mapCity(){
+    public ArrayList<Warehouse> mapCity(){
         try{
             Scanner fileInput = new Scanner(new FileReader("roads.txt"));
             Scanner fileInput2 = new Scanner(new FileReader("center.txt"));
@@ -61,10 +83,15 @@ public class ExperimentController
                 w.cargoSort();
                 cargoList.add(w);
                 cityMap.setWarehouse(w);
+                return cargoList;
             }
         }
         catch(Exception e){
+            
             System.out.println(e);
+            return null;
         }
+        return null;
+    
     }
 }

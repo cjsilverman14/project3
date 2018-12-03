@@ -9,6 +9,7 @@ public class Truck
 {
     int truckNumber;
     int distanceTraveled;
+    boolean truckReady = false;
     ArrayList<Shipment> shipList = new ArrayList<Shipment>();
     public Truck(int t){
         truckNumber = t;

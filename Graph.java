@@ -98,27 +98,32 @@ public class Graph {
     }
 
     public ArrayList<City> shortestPath(City startVertex) {
-        reset();
-        PriorityQueue<City> q = new PriorityQueue<City>();
-        q.add(startVertex);
-        startVertex.dist = 0;
-        ArrayList<City> closestCities = new ArrayList<City>();
-        while (!q.isEmpty()) {
-            City u = q.poll();
-            if (u.visited) continue;
-            u.visited = true;
-            closestCities.add(u);
-            System.out.println(u.name + " " + u.dist + " " + ((u.prev==null)?"":u.prev.name));
-            for (Road e: u.nbs) {
-                City v = e.v;
-                if (v.dist > u.dist + e.w) {
-                    v.dist = u.dist + e.w;
-                    v.prev = u;
-                    q.add(v);
+        if(!startVertex.shortestSet){
+            reset();
+            PriorityQueue<City> q = new PriorityQueue<City>();
+            q.add(startVertex);
+            startVertex.dist = 0;
+            ArrayList<City> closestCities = new ArrayList<City>();
+            while (!q.isEmpty()) {
+                City u = q.poll();
+                if (u.visited) continue;
+                u.visited = true;
+                closestCities.add(u);
+                System.out.println(u.name + " " + u.dist + " " + ((u.prev==null)?"":u.prev.name));
+                for (Road e: u.nbs) {
+                    City v = e.v;
+                    if (v.dist > u.dist + e.w) {
+                        v.dist = u.dist + e.w;
+                        v.prev = u;
+                        q.add(v);
+                    }
                 }
             }
+            return closestCities;
         }
-        return closestCities;
+        else{
+            return startVertex.closestCities;
+        }
     }
 
     public void shortestPath(String startCity,int x){

@@ -13,7 +13,9 @@ public class City implements Comparable<City>
     int centerDist = Integer.MAX_VALUE;
     boolean visited = false;
     boolean hasWarehouse = false;
+    boolean shortestSet = true;
     Warehouse cityWarehouse;
+    ArrayList<City> closestCities = new ArrayList<City>();
     City prev;
     public City(String n){
         name = n;
@@ -21,10 +23,20 @@ public class City implements Comparable<City>
     
     @Override
     public int compareTo(City c){
-        return dist - c.dist;
+        if(dist - c.dist!=0){
+            return dist-c.dist;
+        }
+        else{
+            return name.compareTo(c.name);
+        }
     }
     
     public void setWarehouse(Warehouse w){
-        
+        cityWarehouse = w;
+        w.location = this;
+    }
+    
+    public void setClosestCities(ArrayList<City> cityList){
+        closestCities = cityList;
     }
 }
