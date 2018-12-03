@@ -30,6 +30,10 @@ public class ExperimentController
         for(Warehouse w : ec.cargoList){
             System.out.println(w.city);
         }
+        ec.sortWarehouses();
+        for(Warehouse w : ec.cargoList){
+            System.out.println(w.city);
+        }
         ec.setCenterShortestPath();
         ArrayList<Truck> dispatch = new ArrayList<Truck>();
         int truckNumber=1;
@@ -132,6 +136,81 @@ public class ExperimentController
             l2.add(cargoList.get(count));
             count++;
         }
-        cargoList = mergeSort(l1,l2);
+        LinkedList<Warehouse> convertList = mergeSort(l1,l2);
+        ArrayList<Warehouse> newList = new ArrayList<Warehouse>();
+        for(Warehouse w : convertList){
+            newList.add(w);
+        }
+        cargoList = newList;
+    }
+    public LinkedList<Warehouse> mergeSort(LinkedList<Warehouse> a, LinkedList<Warehouse> b){
+        //Takes the two inputted LinkedLists and divides them up again recursively unless
+        //there is one value or less. After this, it merges them back together.
+        LinkedList<Warehouse> returnList = new LinkedList<Warehouse>();
+        if(a.size() <= 1 && b.size() <= 1){
+            if(b.size() == 0){
+                returnList.add(a.get(0));
+            }
+            else if(a.size() == 0){
+                returnList.add(b.get(0));
+            }
+            else{
+                int test = a.get(0).compareTo(b.get(0));
+                if(test <0){
+                    returnList.add(a.get(0));
+                    returnList.add(b.get(0));
+                }
+                else{
+                    returnList.add(b.get(0));
+                    returnList.add(a.get(0));
+                }
+            }
+        }
+        else{
+            LinkedList<Warehouse> l1 = new LinkedList<Warehouse>();
+            LinkedList<Warehouse> l2 = new LinkedList<Warehouse>();
+            LinkedList<Warehouse> l3 = new LinkedList<Warehouse>();
+            LinkedList<Warehouse> l4 = new LinkedList<Warehouse>();
+            int count = 0;
+            for(int i = 0;i<(a.size()/2);i++){
+                l1.add(a.get(count));
+                count++;
+            }
+            for(int i = 0;i<(a.size()-l1.size());i++){
+                l2.add(a.get(count));
+                count++;
+            }
+            count = 0;
+            for(int i = 0;i<(b.size()/2);i++){
+                l3.add(b.get(count));
+                count++;
+            }
+            for(int i = 0;i<(b.size()-l3.size());i++){
+                l4.add(b.get(count));
+                count++;
+            }
+            LinkedList<Warehouse> sortedArr1 = mergeSort(l1,l2);
+            LinkedList<Warehouse> sortedArr2 = mergeSort(l3,l4);
+            while(sortedArr1.size()>0 && sortedArr2.size()>0){
+                int test = sortedArr1.get(0).compareTo(sortedArr2.get(0));
+                if(test <0){
+                    returnList.add(sortedArr1.remove(0));
+                }
+                else{
+                    returnList.add(sortedArr2.remove(0));
+                }
+            }
+            if(sortedArr1.size()>0){
+                for(int i = 0;i<sortedArr1.size();i++){
+                    returnList.add(sortedArr1.get(i));
+                }
+            }
+            else if(sortedArr2.size()>0){
+                for(int i = 0;i<sortedArr2.size();i++){
+                    returnList.add(sortedArr2.get(i));
+                }
+            }
+        }
+        return returnList;
     }
 }
