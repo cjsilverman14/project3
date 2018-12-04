@@ -22,24 +22,24 @@ public class ExperimentController
     }
     public static void main(String[] args){
         ExperimentController ec = new ExperimentController();
+        
         ec.cargoList = ec.mapCity();
-        /*for(Warehouse w : ec.cargoList){
-            System.out.println(w.city);
-        }*/
-        Collections.sort(ec.cargoList);
-        /*for(Warehouse w : ec.cargoList){
-            System.out.println(w.city);
-        }*/
-        ec.sortWarehouses();
-        /*for(Warehouse w : ec.cargoList){
-            System.out.println(w.city);
-        }*/
         ec.setCenterShortestPath();
+        Collections.sort(ec.cargoList);
+        /**
+         * 
+         * CHANGE WAREHOUSE NUMBER TO FIND THE WAREHOUSE USING BINARY SEARCH
+         */
+
         ArrayList<Truck> dispatch = new ArrayList<Truck>();
         int truckNumber=1;
-        while(!ec.cargoList.isEmpty()){
+        int incompleteWarehouses = ec.cargoList.size();
+        while(incompleteWarehouses != 0){
             Truck t = new Truck(truckNumber);
             truckNumber++;
+            if (truckNumber == 8) {
+                int r = 5;
+            }
             Shipment s = new Shipment(ec.cargoList.get(0).city,500);
             int warehouseNumber =0;
             while(!t.truckReady){
@@ -47,39 +47,56 @@ public class ExperimentController
                 s.setDestination(ec.cityMap.getVertex(s.location));
                 
                 s.destination.setClosestCities(ec.cityMap.shortestPath(s.destination));
-                while(!shipmentCheck){
+                int limit = ec.cargoList.size();
+                while(!shipmentCheck && warehouseNumber <limit){
                     //This needs to be changed not only to access the first warehouse
                     //In the list
-                    Cargo c = ec.cargoList.get(warehouseNumber).incomingCargo.remove(0);
                     if(ec.cargoList.get(warehouseNumber).incomingCargo.isEmpty()){
-                        Warehouse w = ec.cargoList.remove(warehouseNumber);
+                        Warehouse w = ec.cargoList.get(warehouseNumber);
+                        //warehouseNumber++;
+                        System.out.println(w);
                         w.location.hasWarehouse = false;
                         shipmentCheck = true;
+                        if(!w.complete){
+                            incompleteWarehouses--;
+                        }
+                        w.complete = true;
                         continue;
                     }
+                    Cargo c = ec.cargoList.get(warehouseNumber).incomingCargo.remove(0);
                     if(!s.addCargo(c)){
                         ec.cargoList.get(warehouseNumber).incomingCargo.add(0,c);
                         shipmentCheck = true;
                     }
                 }
-                t.addShipment(s);
+                if(!s.shipmentCargo.isEmpty()){
+                    t.addShipment(s);
+                }
                 shipmentCheck = false;
                 t.truckReady = true;
                 ArrayList<City> closest = s.destination.closestCities;
-                for(int i = warehouseNumber;i<closest.size();i++){
+                for(int i = warehouseNumber+1;i<closest.size();i++){
                     if(closest.get(i).hasWarehouse){
-                        if(closest.get(i).cityWarehouse.incomingCargo.get(0).weight <= 500-t.weight){
+                        if(!closest.get(i).cityWarehouse.incomingCargo.isEmpty() && closest.get(i).cityWarehouse.incomingCargo.get(0).weight <= 500-t.weight){
                             t.truckReady = false;
                             s = new Shipment(closest.get(i).name,500-t.weight);
                             warehouseNumber = i;
                             break;
                         }
+                        else{
+                            
+                        }
+                    }
+                    else{
+                        closest.remove(i);
+                        i--;
                     }
                 }
                 
             }
             t.returnTrip();
             dispatch.add(t);
+            System.out.println("Truck sent");
         }
         for(Truck t : dispatch){
             System.out.println(t);
@@ -132,94 +149,5 @@ public class ExperimentController
             return null;
         }
     
-    }
-    public void sortWarehouses(){
-        LinkedList<Warehouse> l1 = new LinkedList<Warehouse>();
-        LinkedList<Warehouse> l2 = new LinkedList<Warehouse>();
-        int count = 0;
-        for(int i = 0;i<(cargoList.size()/2);i++){
-            l1.add(cargoList.get(count));
-            count++;
-        }
-        for(int i = 0;i<(cargoList.size()-l1.size());i++){
-            l2.add(cargoList.get(count));
-            count++;
-        }
-        LinkedList<Warehouse> convertList = mergeSort(l1,l2);
-        ArrayList<Warehouse> newList = new ArrayList<Warehouse>();
-        for(Warehouse w : convertList){
-            newList.add(w);
-        }
-        cargoList = newList;
-    }
-    public LinkedList<Warehouse> mergeSort(LinkedList<Warehouse> a, LinkedList<Warehouse> b){
-        //Takes the two inputted LinkedLists and divides them up again recursively unless
-        //there is one value or less. After this, it merges them back together.
-        LinkedList<Warehouse> returnList = new LinkedList<Warehouse>();
-        if(a.size() <= 1 && b.size() <= 1){
-            if(b.size() == 0){
-                returnList.add(a.get(0));
-            }
-            else if(a.size() == 0){
-                returnList.add(b.get(0));
-            }
-            else{
-                int test = a.get(0).compareTo(b.get(0));
-                if(test <0){
-                    returnList.add(a.get(0));
-                    returnList.add(b.get(0));
-                }
-                else{
-                    returnList.add(b.get(0));
-                    returnList.add(a.get(0));
-                }
-            }
-        }
-        else{
-            LinkedList<Warehouse> l1 = new LinkedList<Warehouse>();
-            LinkedList<Warehouse> l2 = new LinkedList<Warehouse>();
-            LinkedList<Warehouse> l3 = new LinkedList<Warehouse>();
-            LinkedList<Warehouse> l4 = new LinkedList<Warehouse>();
-            int count = 0;
-            for(int i = 0;i<(a.size()/2);i++){
-                l1.add(a.get(count));
-                count++;
-            }
-            for(int i = 0;i<(a.size()-l1.size());i++){
-                l2.add(a.get(count));
-                count++;
-            }
-            count = 0;
-            for(int i = 0;i<(b.size()/2);i++){
-                l3.add(b.get(count));
-                count++;
-            }
-            for(int i = 0;i<(b.size()-l3.size());i++){
-                l4.add(b.get(count));
-                count++;
-            }
-            LinkedList<Warehouse> sortedArr1 = mergeSort(l1,l2);
-            LinkedList<Warehouse> sortedArr2 = mergeSort(l3,l4);
-            while(sortedArr1.size()>0 && sortedArr2.size()>0){
-                int test = sortedArr1.get(0).compareTo(sortedArr2.get(0));
-                if(test <0){
-                    returnList.add(sortedArr1.remove(0));
-                }
-                else{
-                    returnList.add(sortedArr2.remove(0));
-                }
-            }
-            if(sortedArr1.size()>0){
-                for(int i = 0;i<sortedArr1.size();i++){
-                    returnList.add(sortedArr1.get(i));
-                }
-            }
-            else if(sortedArr2.size()>0){
-                for(int i = 0;i<sortedArr2.size();i++){
-                    returnList.add(sortedArr2.get(i));
-                }
-            }
-        }
-        return returnList;
     }
 }

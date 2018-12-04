@@ -10,6 +10,7 @@ public class Warehouse implements Comparable<Warehouse>
     String city;
     City location;
     ArrayList<Cargo> incomingCargo = new ArrayList<Cargo>();
+    boolean complete = false;
     public Warehouse(String c){
         city = c;
     }
@@ -20,6 +21,7 @@ public class Warehouse implements Comparable<Warehouse>
         Collections.sort(incomingCargo);
     }
     public int compareTo(Warehouse w){
+        System.out.println(location.centerDist);
         return location.centerDist - w.location.centerDist;
     }
 }
