@@ -23,17 +23,17 @@ public class ExperimentController
     public static void main(String[] args){
         ExperimentController ec = new ExperimentController();
         ec.cargoList = ec.mapCity();
-        for(Warehouse w : ec.cargoList){
+        /*for(Warehouse w : ec.cargoList){
             System.out.println(w.city);
-        }
+        }*/
         Collections.sort(ec.cargoList);
-        for(Warehouse w : ec.cargoList){
+        /*for(Warehouse w : ec.cargoList){
             System.out.println(w.city);
-        }
+        }*/
         ec.sortWarehouses();
-        for(Warehouse w : ec.cargoList){
+        /*for(Warehouse w : ec.cargoList){
             System.out.println(w.city);
-        }
+        }*/
         ec.setCenterShortestPath();
         ArrayList<Truck> dispatch = new ArrayList<Truck>();
         int truckNumber=1;
@@ -41,35 +41,38 @@ public class ExperimentController
             Truck t = new Truck(truckNumber);
             truckNumber++;
             Shipment s = new Shipment(ec.cargoList.get(0).city,500);
+            int warehouseNumber =0;
             while(!t.truckReady){
                 boolean shipmentCheck = false;
                 s.setDestination(ec.cityMap.getVertex(s.location));
-                for(City c : ec.cityMap.shortestPath(s.destination)){
-                    System.out.println(c.name);
-                }
+                
                 s.destination.setClosestCities(ec.cityMap.shortestPath(s.destination));
                 while(!shipmentCheck){
                     //This needs to be changed not only to access the first warehouse
                     //In the list
-                    if(ec.cargoList.get(0).incomingCargo.isEmpty()){
-                        ec.cargoList.remove(0);
+                    Cargo c = ec.cargoList.get(warehouseNumber).incomingCargo.remove(0);
+                    if(ec.cargoList.get(warehouseNumber).incomingCargo.isEmpty()){
+                        Warehouse w = ec.cargoList.remove(warehouseNumber);
+                        w.location.hasWarehouse = false;
                         shipmentCheck = true;
                         continue;
                     }
-                    Cargo c = ec.cargoList.get(0).incomingCargo.remove(0);
                     if(!s.addCargo(c)){
-                        ec.cargoList.get(0).incomingCargo.add(0,c);
+                        ec.cargoList.get(warehouseNumber).incomingCargo.add(0,c);
                         shipmentCheck = true;
                     }
                 }
                 t.addShipment(s);
                 shipmentCheck = false;
                 t.truckReady = true;
-                for(City c : s.destination.closestCities){
-                    if(c.hasWarehouse){
-                        if(c.cityWarehouse.incomingCargo.get(0).weight <= 500-t.weight){
+                ArrayList<City> closest = s.destination.closestCities;
+                for(int i = warehouseNumber;i<closest.size();i++){
+                    if(closest.get(i).hasWarehouse){
+                        if(closest.get(i).cityWarehouse.incomingCargo.get(0).weight <= 500-t.weight){
                             t.truckReady = false;
-                            s = new Shipment(c.name,500-t.weight);
+                            s = new Shipment(closest.get(i).name,500-t.weight);
+                            warehouseNumber = i;
+                            break;
                         }
                     }
                 }

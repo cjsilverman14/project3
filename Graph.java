@@ -113,6 +113,7 @@ public class Graph {
                 for (Road e: u.nbs) {
                     City v = e.v;
                     if (v.dist > u.dist + e.w) {
+                        q.remove(v);
                         v.dist = u.dist + e.w;
                         v.prev = u;
                         q.add(v);
@@ -145,6 +146,7 @@ public class Graph {
             for (Road e: u.nbs) {
                 City v = e.v;
                 if (v.dist > u.dist + e.w) {
+                    q.remove(v);
                     v.dist = u.dist + e.w;
                     v.centerDist = u.dist + e.w;
                     v.prev = u;
