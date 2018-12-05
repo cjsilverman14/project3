@@ -25,6 +25,7 @@ public class ExperimentController
         
         ec.cargoList = ec.mapCity();
         ec.setCenterShortestPath();
+        ec.cityMap.shortestPath(ec.cityMap.getVertex(ec.center));
         Collections.sort(ec.cargoList);
         /**
          * 
@@ -41,13 +42,19 @@ public class ExperimentController
             if (truckNumber == 8) {
                 int r = 5;
             }
-            Shipment s = new Shipment(ec.cargoList.get(0).city,500);
+            
+            while(ec.cargoList.get(startingWarehouse).incomingCargo.isEmpty()){
+                startingWarehouse++;
+            }
             Warehouse currentWarehouse = ec.cargoList.get(startingWarehouse);
+            Shipment s = new Shipment(currentWarehouse.city,500);
+           
+            s.setDestination(ec.cityMap.getVertex(s.location));
+            s.setDistance();
+            s.destination.setClosestCities(ec.cityMap.shortestPath(s.destination));
+            
             while(!t.truckReady){
                 boolean shipmentCheck = false;
-                s.setDestination(ec.cityMap.getVertex(s.location));
-                
-                s.destination.setClosestCities(ec.cityMap.shortestPath(s.destination));
                 int limit = ec.cargoList.size();
                 while(!shipmentCheck){
                     //This needs to be changed not only to access the first warehouse
@@ -79,7 +86,12 @@ public class ExperimentController
                     if(closest.get(i).hasWarehouse){
                         if(!closest.get(i).cityWarehouse.incomingCargo.isEmpty() && closest.get(i).cityWarehouse.incomingCargo.get(0).weight <= 500-t.weight){
                             t.truckReady = false;
+                            City c = closest.get(i);
                             s = new Shipment(closest.get(i).name,500-t.weight);
+                            ec.cityMap.shortestPath(c);
+                            
+                            s.setDestination(ec.cityMap.getVertex(s.location));
+                            s.setDistance();
                             currentWarehouse = closest.get(i).cityWarehouse;
                             break;
                         }
