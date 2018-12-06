@@ -112,12 +112,13 @@ public class ExperimentController
         try{
             PrintWriter output = new PrintWriter("output.txt");
             for(Truck t : dispatch){
-                totalDist += t.distanceTraveled;
+
                 ArrayList<String> truckLines = t.printStrings();
                 for(String s : truckLines){
                     output.write(s);
                     output.println();
                 }
+                totalDist += t.distanceTraveled;
             }
             System.out.println("Total Distance: " + totalDist);
             output.write("Total Distance: " + totalDist);

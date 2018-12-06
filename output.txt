@@ -433,4 +433,4 @@ Distance Traveled: 158
 Truck 79:
 Deliver to warehouse v1834 total weight: 164([v1834(1): 164]) dist: 46
 Distance Traveled: 92
-Total Distance: 2824
+Total Distance: 8846
