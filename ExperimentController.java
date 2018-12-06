@@ -10,9 +10,21 @@ public class ExperimentController
 {
     Graph cityMap = new Graph();
     String center;
+    String roadsFile;
+    String centerFile;
+    String warehouseFile;
     ArrayList<Warehouse> cargoList;
     public ExperimentController(){
         center = "A";
+        roadsFile = "roads.txt";
+        centerFile = "center.txt";
+        warehouseFile = "warehouses.txt";
+    }
+    
+    public void smallData(){
+        roadsFile = "roadsS.txt";
+        centerFile = "centerS.txt";
+        warehouseFile = "warehousesS.txt";
     }
 
     public void shortestPath(){
@@ -129,12 +141,13 @@ public class ExperimentController
         }
 
     }
+    
 
     public ArrayList<Warehouse> mapCity(){
         try{
-            Scanner fileInput = new Scanner(new FileReader("roads.txt"));
-            Scanner fileInput2 = new Scanner(new FileReader("center.txt"));
-            Scanner fileInput3 = new Scanner(new FileReader("warehouses.txt"));
+            Scanner fileInput = new Scanner(new FileReader(roadsFile));
+            Scanner fileInput2 = new Scanner(new FileReader(centerFile));
+            Scanner fileInput3 = new Scanner(new FileReader(warehouseFile));
             fileInput.nextLine();
             while(fileInput.hasNextLine()){
                 String line = fileInput.nextLine();
