@@ -1,4 +1,4 @@
-
+import java.util.*;
 import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
@@ -50,6 +50,35 @@ public class TruckTest
         t.distanceTraveled+=5;
         t.returnTrip();
         assert(t.weight == 10 && t.distanceTraveled == 10);
+    }
+    
+    @Test
+    public void printTruck(){
+        City c = new City("A");
+        c.dist = 5;
+        c.centerDist = 5;
+        Cargo order = new Cargo(10,"A",1);
+        Shipment s = new Shipment("A",50);
+        s.setDestination(c);
+        s.setDistance();
+        s.addCargo(order);
+        Truck t = new Truck(1);
+        t.addShipment(s);
+        t.returnTrip();
+        ArrayList<String> answer = new ArrayList<String>();
+        answer.add("Truck 1:");
+        answer.add(s.toString());
+        answer.add("Distance Traveled: 10");
+        ArrayList<String> test = t.printStrings();
+        boolean check = true;
+        for(int i = 0;i<test.size();i++){
+            System.out.println(answer.get(i));
+            System.out.println(test.get(i));
+            if(!test.get(i).equals(answer.get(i))){
+                check = false;
+            }
+        }
+        assert(check);
     }
     
     @Test
