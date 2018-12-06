@@ -69,6 +69,8 @@ public class ShipmentTesting
         s.addCargo(c2);
         s.addCargo(c3);
         String answer = ("Deliver to warehouse A total weight: " + (56+67+123) + "([A(1): 56, A(2): 67, A(3): 123]) dist: 5");
+        String test = s.toString();
+        assertEquals(answer,test);
     }
     
     /**
