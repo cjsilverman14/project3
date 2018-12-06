@@ -25,6 +25,7 @@ public class Graph {
         if (v == null) {
             v = new City(name);
             vertexMap.put(name, v);
+            System.out.println("New city " + name);
         }
         return v;
     }
