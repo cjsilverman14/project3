@@ -26,10 +26,11 @@ public class Truck
         return("Truck " + truckNumber + ":\n" + shipmentLines + "Distance Traveled: " + distanceTraveled + "\n");
         
     }
-    public void addDist(int x){
+    /*public void addDist(int x){
         distanceTraveled += x;
-    }
+    }*/
     public void addShipment(Shipment s){
+        System.out.println(s.distance);
         shipList.add(s);
         weight+=s.weight;
     }

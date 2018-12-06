@@ -27,7 +27,7 @@ public class Shipment
                 cargoLine+=", ";
             }
         }
-        return("Deliver to warehouse " + destination.name + "total weight: " + weight + "([" + cargoLine + "]) dist: " + distance);
+        return("Deliver to warehouse " + destination.name + " total weight: " + weight + "([" + cargoLine + "]) dist: " + distance);
     }
     public boolean addCargo(Cargo c){
         if(weight + c.weight > maxWeight){
@@ -39,7 +39,7 @@ public class Shipment
     }
     public void setDestination(City d){
         destination = d;
-        distance += d.dist;
+        //distance += d.dist;
     }
     public void setDistance(){
         distance = destination.dist;

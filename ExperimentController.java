@@ -54,9 +54,9 @@ public class ExperimentController
             ec.shortestPath();
             s.setDestination(ec.cityMap.getVertex(s.location));
             s.setDistance();
-            s.destination.setClosestCities(ec.cityMap.shortestPath(s.destination));
 
             while(!t.truckReady){
+                s.destination.setClosestCities(ec.cityMap.shortestPath(s.destination));
                 boolean shipmentCheck = false;
                 int limit = ec.cargoList.size();
                 while(!shipmentCheck){
@@ -108,9 +108,9 @@ public class ExperimentController
                         i--;
                     }
                 }
-
+                int y = 6;
             }
-            t.returnTrip();
+            t.distanceTraveled += ec.cityMap.getVertex(ec.center).dist;
             dispatch.add(t);
         }
         int totalDist = 0;
@@ -131,6 +131,7 @@ public class ExperimentController
         }
 
     }
+
     public ArrayList<Warehouse> mapCity(){
         try{
             Scanner fileInput = new Scanner(new FileReader("roads.txt"));
