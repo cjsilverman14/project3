@@ -21,7 +21,6 @@ public class Warehouse implements Comparable<Warehouse>
         Collections.sort(incomingCargo);
     }
     public int compareTo(Warehouse w){
-        System.out.println(location.centerDist);
         return location.centerDist - w.location.centerDist;
     }
 }

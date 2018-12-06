@@ -1,63 +1,436 @@
 Truck 1:
-
-Deliver to warehouse B total weight: 369 ([B(2): 369]) dist: 12
-
-Deliver to warehouse E total weight: 97 ([E(7): 48, E(5): 49]) dist: 11
-
-Distance traveled 46
-
+Deliver to warehouse v2772 total weight: 241 ([v2772(2): 14, v2772(1): 79, v2772(3): 148]) dist: 13
+Deliver to warehouse embl total weight: 71 ([embl(2): 71]) dist: 6
+Deliver to warehouse v2219 total weight: 89 ([v2219(1): 89]) dist: 5
+Deliver to warehouse v2243 total weight: 42 ([v2243(1): 42]) dist: 6
+Deliver to warehouse v1891 total weight: 24 ([v1891(1): 24]) dist: 4
+Deliver to warehouse v2259 total weight: 27 ([v2259(1): 27]) dist: 2
+Deliver to warehouse ubvmsa total weight: 6 ([ubvmsa(1): 6]) dist: 15
+Distance traveled 84
 Truck 2:
-
-Deliver to warehouse B total weight: 410 ([B(1): 410]) dist: 12
-
-Distance traveled 24
-
+Deliver to warehouse v2219 total weight: 225 ([v2219(2): 225]) dist: 14
+Deliver to warehouse dgihrz01 total weight: 173 ([dgihrz01(1): 173]) dist: 4
+Deliver to warehouse polytec1 total weight: 44 ([polytec1(1): 44]) dist: 6
+Deliver to warehouse v2604 total weight: 11 ([v2604(1): 11]) dist: 5
+Deliver to warehouse polytec2 total weight: 17 ([polytec2(1): 17]) dist: 8
+Deliver to warehouse v2075 total weight: 16 ([v2075(1): 16]) dist: 9
+Deliver to warehouse v2978 total weight: 9 ([v2978(1): 9]) dist: 22
+Deliver to warehouse v1888 total weight: 4 ([v1888(1): 4]) dist: 25
+Distance traveled 122
 Truck 3:
-
-Deliver to warehouse E total weight: 414 ([E(6): 122, E(3): 136, E(1): 156]) dist: 23
-
-Distance traveled 46
-
+Deliver to warehouse embl total weight: 192 ([embl(1): 192]) dist: 15
+Deliver to warehouse scrvmsys total weight: 208 ([scrvmsys(2): 54, scrvmsys(1): 154]) dist: 6
+Deliver to warehouse v2945 total weight: 21 ([v2945(1): 21]) dist: 6
+Deliver to warehouse v2078 total weight: 21 ([v2078(2): 21]) dist: 7
+Deliver to warehouse tufts total weight: 29 ([tufts(4): 29]) dist: 12
+Deliver to warehouse v2659 total weight: 19 ([v2659(1): 19]) dist: 10
+Deliver to warehouse fnalg total weight: 9 ([fnalg(1): 9]) dist: 14
+Distance traveled 100
 Truck 4:
-
-Deliver to warehouse E total weight: 255 ([E(8): 255]) dist: 23
-
-Deliver to warehouse D total weight: 128 ([D(3): 128]) dist: 34
-
-Distance traveled 86
-
+Deliver to warehouse dgihrz01 total weight: 184 ([dgihrz01(2): 184]) dist: 16
+Deliver to warehouse frese51 total weight: 158 ([frese51(1): 158]) dist: 5
+Deliver to warehouse v2564 total weight: 110 ([v2564(1): 110]) dist: 4
+Deliver to warehouse tufts total weight: 31 ([tufts(2): 31]) dist: 13
+Deliver to warehouse v2118 total weight: 14 ([v2118(1): 14]) dist: 12
+Deliver to warehouse v2391 total weight: 2 ([v2391(1): 2]) dist: 36
+Distance traveled 130
 Truck 5:
-
-Deliver to warehouse E total weight: 293 ([E(2): 293]) dist: 23
-
-Deliver to warehouse D total weight: 174 ([D(1): 174]) dist: 34
-
-Distance traveled 86
-
+Deliver to warehouse djukfa51 total weight: 204 ([djukfa51(1): 204]) dist: 18
+Deliver to warehouse v2280 total weight: 255 ([v2280(2): 126, v2280(1): 129]) dist: 9
+Deliver to warehouse hujinos total weight: 36 ([hujinos(1): 36]) dist: 18
+Deliver to warehouse v2129 total weight: 4 ([v2129(4): 4]) dist: 32
+Distance traveled 104
 Truck 6:
-
-Deliver to warehouse E total weight: 320 ([E(4): 320]) dist: 23
-
-Distance traveled 46
-
+Deliver to warehouse v2340 total weight: 71 ([v2340(1): 71]) dist: 19
+Deliver to warehouse dm0lrz01 total weight: 173 ([dm0lrz01(1): 173]) dist: 9
+Deliver to warehouse htikub5 total weight: 169 ([htikub5(1): 169]) dist: 2
+Deliver to warehouse polytec1 total weight: 70 ([polytec1(2): 70]) dist: 8
+Deliver to warehouse dkauni13 total weight: 7 ([dkauni13(1): 7]) dist: 7
+Deliver to warehouse v2891 total weight: 10 ([v2891(1): 10]) dist: 27
+Distance traveled 108
 Truck 7:
-
-Deliver to warehouse D total weight: 452 ([D(4): 213, D(2): 239]) dist: 29
-
-Distance traveled 58
-
+Deliver to warehouse almvmz total weight: 128 ([almvmz(1): 128]) dist: 20
+Deliver to warehouse mitwibr total weight: 101 ([mitwibr(1): 101]) dist: 3
+Deliver to warehouse idcsvax total weight: 155 ([idcsvax(3): 63, idcsvax(1): 92]) dist: 2
+Deliver to warehouse v2052 total weight: 72 ([v2052(1): 72]) dist: 4
+Deliver to warehouse v2908 total weight: 42 ([v2908(1): 42]) dist: 4
+Distance traveled 54
 Truck 8:
-
-Deliver to warehouse D total weight: 291 ([D(5): 291]) dist: 29
-
-Deliver to warehouse F total weight: 181 ([F(2): 181]) dist: 39
-
-Distance traveled 116
-
+Deliver to warehouse calstate total weight: 14 ([calstate(1): 14]) dist: 20
+Deliver to warehouse dkauni13 total weight: 229 ([dkauni13(2): 229]) dist: 5
+Deliver to warehouse trfirat total weight: 195 ([trfirat(2): 92, trfirat(1): 103]) dist: 7
+Deliver to warehouse v2273 total weight: 62 ([v2273(1): 62]) dist: 7
+Distance traveled 64
 Truck 9:
-
-Deliver to warehouse F total weight: 318 ([F(1): 318]) dist: 48
-
+Deliver to warehouse cornella total weight: 93 ([cornella(1): 93]) dist: 20
+Deliver to warehouse v1972 total weight: 94 ([v1972(1): 94]) dist: 9
+Deliver to warehouse sunycbuf total weight: 68 ([sunycbuf(1): 68]) dist: 4
+Deliver to warehouse eb0ub013 total weight: 205 ([eb0ub013(1): 205]) dist: 8
+Deliver to warehouse dkakfk51 total weight: 19 ([dkakfk51(3): 19]) dist: 20
+Deliver to warehouse dbiuni11 total weight: 16 ([dbiuni11(1): 16]) dist: 22
+Deliver to warehouse v2983 total weight: 5 ([v2983(1): 5]) dist: 47
+Distance traveled 170
+Truck 10:
+Deliver to warehouse mcmaster total weight: 235 ([mcmaster(1): 235]) dist: 20
+Deliver to warehouse idcsvax total weight: 118 ([idcsvax(2): 118]) dist: 7
+Deliver to warehouse v2420 total weight: 76 ([v2420(1): 76]) dist: 4
+Deliver to warehouse blekul10 total weight: 46 ([blekul10(3): 46]) dist: 3
+Deliver to warehouse v2978 total weight: 14 ([v2978(4): 14]) dist: 18
+Deliver to warehouse ucsccrlj total weight: 10 ([ucsccrlj(1): 10]) dist: 27
+Distance traveled 118
+Truck 11:
+Deliver to warehouse ucsca total weight: 439 ([ucsca(2): 210, ucsca(1): 229]) dist: 20
+Deliver to warehouse v2294 total weight: 33 ([v2294(1): 33]) dist: 8
+Deliver to warehouse uqv total weight: 27 ([uqv(1): 27]) dist: 18
+Distance traveled 72
+Truck 12:
+Deliver to warehouse v2198 total weight: 242 ([v2198(1): 242]) dist: 20
+Deliver to warehouse wyocdc2 total weight: 142 ([wyocdc2(1): 142]) dist: 9
+Deliver to warehouse v2293 total weight: 115 ([v2293(1): 115]) dist: 12
+Distance traveled 70
+Truck 13:
+Deliver to warehouse v2827 total weight: 163 ([v2827(1): 163]) dist: 20
+Deliver to warehouse v2641 total weight: 247 ([v2641(3): 102, v2641(1): 145]) dist: 3
+Deliver to warehouse v2604 total weight: 86 ([v2604(2): 86]) dist: 8
+Distance traveled 52
+Truck 14:
+Deliver to warehouse utsa4381 total weight: 210 ([utsa4381(1): 210]) dist: 21
+Deliver to warehouse grearn total weight: 251 ([grearn(1): 90, grearn(2): 161]) dist: 11
+Deliver to warehouse v1997 total weight: 35 ([v1997(1): 35]) dist: 17
+Distance traveled 70
+Truck 15:
+Deliver to warehouse v1997 total weight: 178 ([v1997(2): 178]) dist: 21
+Deliver to warehouse luxcep11 total weight: 209 ([luxcep11(1): 209]) dist: 6
+Deliver to warehouse v2819 total weight: 75 ([v2819(1): 75]) dist: 13
+Deliver to warehouse v2352 total weight: 11 ([v2352(1): 11]) dist: 13
+Deliver to warehouse v2847 total weight: 12 ([v2847(1): 12]) dist: 29
+Deliver to warehouse hentht5 total weight: 7 ([hentht5(2): 7]) dist: 34
+Distance traveled 156
+Truck 16:
+Deliver to warehouse v2641 total weight: 178 ([v2641(2): 178]) dist: 21
+Deliver to warehouse blekul10 total weight: 216 ([blekul10(2): 89, blekul10(1): 127]) dist: 11
+Deliver to warehouse mcgill2 total weight: 63 ([mcgill2(3): 63]) dist: 7
+Deliver to warehouse ncsumae total weight: 31 ([ncsumae(1): 31]) dist: 21
+Deliver to warehouse v2720 total weight: 10 ([v2720(1): 10]) dist: 37
+Distance traveled 132
+Truck 17:
+Deliver to warehouse jpntohok total weight: 38 ([jpntohok(1): 38]) dist: 22
+Deliver to warehouse v2734 total weight: 147 ([v2734(1): 147]) dist: 14
+Deliver to warehouse mcgill2 total weight: 194 ([mcgill2(2): 89, mcgill2(1): 105]) dist: 11
+Deliver to warehouse v2801 total weight: 118 ([v2801(1): 118]) dist: 14
+Distance traveled 88
+Truck 18:
+Deliver to warehouse jpntscvm total weight: 217 ([jpntscvm(1): 217]) dist: 22
+Deliver to warehouse ucccvm1 total weight: 69 ([ucccvm1(1): 69]) dist: 28
+Deliver to warehouse v2659 total weight: 82 ([v2659(2): 82]) dist: 4
+Deliver to warehouse v2397 total weight: 60 ([v2397(1): 60]) dist: 7
+Deliver to warehouse v2632 total weight: 55 ([v2632(1): 55]) dist: 6
+Deliver to warehouse v2071 total weight: 17 ([v2071(3): 17]) dist: 31
+Distance traveled 138
+Truck 19:
+Deliver to warehouse nrcvm01 total weight: 182 ([nrcvm01(1): 182]) dist: 22
+Deliver to warehouse harvunxt total weight: 141 ([harvunxt(1): 141]) dist: 13
+Deliver to warehouse yuvenus total weight: 69 ([yuvenus(2): 69]) dist: 7
+Deliver to warehouse tufts total weight: 84 ([tufts(3): 84]) dist: 16
+Deliver to warehouse v2377 total weight: 22 ([v2377(1): 22]) dist: 23
+Distance traveled 106
+Truck 20:
+Deliver to warehouse tufts total weight: 112 ([tufts(1): 112]) dist: 22
+Deliver to warehouse uiaece total weight: 161 ([uiaece(1): 71, uiaece(2): 90]) dist: 7
+Deliver to warehouse v2839 total weight: 207 ([v2839(1): 32, v2839(2): 175]) dist: 11
+Deliver to warehouse v2520 total weight: 18 ([v2520(1): 18]) dist: 35
+Distance traveled 102
+Truck 21:
+Deliver to warehouse uordb2 total weight: 156 ([uordb2(1): 156]) dist: 22
+Deliver to warehouse umiphys total weight: 52 ([umiphys(1): 52]) dist: 5
+Deliver to warehouse v1833 total weight: 208 ([v1833(1): 95, v1833(2): 113]) dist: 12
+Deliver to warehouse hujics total weight: 62 ([hujics(5): 62]) dist: 15
+Deliver to warehouse v2679 total weight: 19 ([v2679(1): 19]) dist: 26
+Distance traveled 116
+Truck 22:
+Deliver to warehouse v1899 total weight: 371 ([v1899(2): 134, v1899(3): 237]) dist: 22
+Deliver to warehouse uqv total weight: 41 ([uqv(2): 41]) dist: 14
+Deliver to warehouse v2978 total weight: 37 ([v2978(2): 37]) dist: 14
+Deliver to warehouse v2997 total weight: 28 ([v2997(1): 28]) dist: 17
+Deliver to warehouse v2720 total weight: 17 ([v2720(2): 17]) dist: 34
+Distance traveled 136
+Truck 23:
+Deliver to warehouse v1899 total weight: 244 ([v1899(1): 244]) dist: 22
+Deliver to warehouse dsihrz51 total weight: 160 ([dsihrz51(1): 160]) dist: 15
+Deliver to warehouse bingvma total weight: 80 ([bingvma(3): 80]) dist: 14
+Distance traveled 76
+Truck 24:
+Deliver to warehouse v2738 total weight: 67 ([v2738(1): 67]) dist: 22
+Deliver to warehouse dkakfk51 total weight: 342 ([dkakfk51(2): 136, dkakfk51(4): 206]) dist: 17
+Deliver to warehouse frill51 total weight: 72 ([frill51(1): 72]) dist: 17
+Distance traveled 90
+Truck 25:
+Deliver to warehouse dkakfk51 total weight: 239 ([dkakfk51(1): 239]) dist: 23
+Deliver to warehouse v1888 total weight: 204 ([v1888(2): 204]) dist: 6
+Deliver to warehouse pisces total weight: 56 ([pisces(4): 56]) dist: 21
+Distance traveled 78
+Truck 26:
+Deliver to warehouse v1961 total weight: 438 ([v1961(2): 196, v1961(1): 242]) dist: 23
+Deliver to warehouse v2978 total weight: 58 ([v2978(3): 58]) dist: 15
+Distance traveled 68
+Truck 27:
+Deliver to warehouse v2657 total weight: 405 ([v2657(1): 184, v2657(2): 221]) dist: 23
+Deliver to warehouse v2473 total weight: 71 ([v2473(1): 71]) dist: 8
+Deliver to warehouse hujinix total weight: 22 ([hujinix(2): 22]) dist: 29
+Distance traveled 102
+Truck 28:
+Deliver to warehouse estec total weight: 305 ([estec(1): 80, estec(2): 225]) dist: 24
+Deliver to warehouse uoft01 total weight: 118 ([uoft01(1): 118]) dist: 10
+Deliver to warehouse v2469 total weight: 41 ([v2469(1): 41]) dist: 9
+Deliver to warehouse v2679 total weight: 28 ([v2679(2): 28]) dist: 31
+Distance traveled 110
+Truck 29:
+Deliver to warehouse qucdn total weight: 164 ([qucdn(1): 164]) dist: 24
+Deliver to warehouse pisces total weight: 176 ([pisces(1): 70, pisces(2): 106]) dist: 14
+Deliver to warehouse v2157 total weight: 93 ([v2157(1): 93]) dist: 15
+Deliver to warehouse v2861 total weight: 66 ([v2861(1): 66]) dist: 20
+Distance traveled 108
+Truck 30:
+Deliver to warehouse v2179 total weight: 180 ([v2179(1): 180]) dist: 24
+Deliver to warehouse yuvenus total weight: 180 ([yuvenus(1): 180]) dist: 10
+Deliver to warehouse v2452 total weight: 93 ([v2452(1): 93]) dist: 17
+Deliver to warehouse uottawa2 total weight: 46 ([uottawa2(1): 46]) dist: 30
+Distance traveled 110
+Truck 31:
+Deliver to warehouse bingvma total weight: 358 ([bingvma(1): 147, bingvma(4): 211]) dist: 25
+Deliver to warehouse banuia51 total weight: 101 ([banuia51(1): 101]) dist: 20
+Deliver to warehouse caltech total weight: 38 ([caltech(1): 38]) dist: 27
+Distance traveled 102
+Truck 32:
+Deliver to warehouse bingvma total weight: 247 ([bingvma(2): 247]) dist: 25
+Deliver to warehouse ncsuadm total weight: 167 ([ncsuadm(1): 167]) dist: 8
+Deliver to warehouse v2712 total weight: 82 ([v2712(1): 82]) dist: 18
+Distance traveled 86
+Truck 33:
+Deliver to warehouse gmuvax total weight: 155 ([gmuvax(1): 155]) dist: 25
+Deliver to warehouse finhutc total weight: 229 ([finhutc(2): 229]) dist: 11
+Deliver to warehouse v2722 total weight: 96 ([v2722(1): 96]) dist: 14
+Distance traveled 78
+Truck 34:
+Deliver to warehouse ncsuadm total weight: 213 ([ncsuadm(2): 213]) dist: 25
+Deliver to warehouse cmphys total weight: 184 ([cmphys(1): 184]) dist: 14
+Deliver to warehouse ncsumte total weight: 102 ([ncsumte(1): 102]) dist: 14
+Distance traveled 82
+Truck 35:
+Deliver to warehouse acadia total weight: 317 ([acadia(2): 128, acadia(1): 189]) dist: 26
+Deliver to warehouse v2857 total weight: 147 ([v2857(2): 48, v2857(3): 99]) dist: 7
+Deliver to warehouse ucscz total weight: 29 ([ucscz(3): 29]) dist: 49
+Distance traveled 122
+Truck 36:
+Deliver to warehouse bbrbfu01 total weight: 220 ([bbrbfu01(1): 84, bbrbfu01(2): 136]) dist: 26
+Deliver to warehouse dacth51 total weight: 194 ([dacth51(1): 194]) dist: 24
+Deliver to warehouse utkvx3 total weight: 70 ([utkvx3(3): 70]) dist: 18
 Distance traveled 96
-
-Total distance traveled: 604
+Truck 37:
+Deliver to warehouse finhutc total weight: 246 ([finhutc(1): 246]) dist: 26
+Deliver to warehouse v2078 total weight: 157 ([v2078(1): 157]) dist: 14
+Deliver to warehouse finuh total weight: 53 ([finuh(2): 53]) dist: 20
+Deliver to warehouse v2456 total weight: 37 ([v2456(1): 37]) dist: 29
+Distance traveled 118
+Truck 38:
+Deliver to warehouse harvsphb total weight: 93 ([harvsphb(1): 93]) dist: 27
+Deliver to warehouse caltech total weight: 326 ([caltech(4): 144, caltech(3): 182]) dist: 11
+Deliver to warehouse rmc total weight: 33 ([rmc(1): 33]) dist: 19
+Deliver to warehouse hroeur1 total weight: 46 ([hroeur1(1): 46]) dist: 37
+Distance traveled 132
+Truck 39:
+Deliver to warehouse v2129 total weight: 369 ([v2129(1): 82, v2129(3): 117, v2129(2): 170]) dist: 27
+Deliver to warehouse finuh total weight: 131 ([finuh(1): 131]) dist: 27
+Distance traveled 82
+Truck 40:
+Deliver to warehouse hujics total weight: 429 ([hujics(3): 73, hujics(4): 166, hujics(2): 190]) dist: 28
+Deliver to warehouse hentht5 total weight: 67 ([hentht5(5): 67]) dist: 26
+Distance traveled 94
+Truck 41:
+Deliver to warehouse hujics total weight: 241 ([hujics(1): 241]) dist: 28
+Deliver to warehouse lsumvs total weight: 158 ([lsumvs(1): 158]) dist: 14
+Deliver to warehouse v1935 total weight: 87 ([v1935(1): 87]) dist: 18
+Distance traveled 90
+Truck 42:
+Deliver to warehouse ipduniv total weight: 396 ([ipduniv(1): 197, ipduniv(2): 199]) dist: 28
+Deliver to warehouse iecvm1 total weight: 59 ([iecvm1(1): 59]) dist: 17
+Deliver to warehouse v2471 total weight: 45 ([v2471(1): 45]) dist: 25
+Distance traveled 106
+Truck 43:
+Deliver to warehouse pisces total weight: 215 ([pisces(3): 215]) dist: 28
+Deliver to warehouse v2659 total weight: 199 ([v2659(3): 199]) dist: 18
+Deliver to warehouse v1922 total weight: 59 ([v1922(1): 59]) dist: 20
+Deliver to warehouse watsci total weight: 26 ([watsci(2): 26]) dist: 50
+Distance traveled 168
+Truck 44:
+Deliver to warehouse unlvm total weight: 130 ([unlvm(1): 130]) dist: 28
+Deliver to warehouse v2272 total weight: 58 ([v2272(1): 58]) dist: 13
+Deliver to warehouse harvsc3 total weight: 245 ([harvsc3(1): 77, harvsc3(2): 168]) dist: 12
+Deliver to warehouse harvunxc total weight: 56 ([harvunxc(1): 56]) dist: 15
+Distance traveled 112
+Truck 45:
+Deliver to warehouse uoft01 total weight: 183 ([uoft01(2): 183]) dist: 28
+Deliver to warehouse hujivms total weight: 244 ([hujivms(1): 244]) dist: 15
+Deliver to warehouse v2983 total weight: 39 ([v2983(3): 39]) dist: 19
+Deliver to warehouse db0tuz01 total weight: 33 ([db0tuz01(1): 33]) dist: 46
+Distance traveled 152
+Truck 46:
+Deliver to warehouse utkvx3 total weight: 449 ([utkvx3(2): 212, utkvx3(1): 237]) dist: 28
+Deliver to warehouse v2479 total weight: 42 ([v2479(1): 42]) dist: 28
+Distance traveled 88
+Truck 47:
+Deliver to warehouse uhrcc total weight: 243 ([uhrcc(1): 63, uhrcc(2): 180]) dist: 29
+Deliver to warehouse v2834 total weight: 168 ([v2834(1): 168]) dist: 21
+Deliver to warehouse v2846 total weight: 84 ([v2846(2): 84]) dist: 22
+Distance traveled 106
+Truck 48:
+Deliver to warehouse uottawa2 total weight: 241 ([uottawa2(2): 241]) dist: 29
+Deliver to warehouse gallub total weight: 175 ([gallub(1): 175]) dist: 13
+Deliver to warehouse v1922 total weight: 74 ([v1922(3): 74]) dist: 26
+Distance traveled 98
+Truck 49:
+Deliver to warehouse v2685 total weight: 248 ([v2685(1): 248]) dist: 29
+Deliver to warehouse v2759 total weight: 224 ([v2759(2): 224]) dist: 19
+Distance traveled 94
+Truck 50:
+Deliver to warehouse weizmann total weight: 188 ([weizmann(1): 188]) dist: 29
+Deliver to warehouse uwav4 total weight: 153 ([uwav4(1): 153]) dist: 21
+Deliver to warehouse v2687 total weight: 55 ([v2687(2): 55]) dist: 20
+Deliver to warehouse v2919 total weight: 84 ([v2919(1): 84]) dist: 10
+Distance traveled 110
+Truck 51:
+Deliver to warehouse caltech total weight: 238 ([caltech(2): 238]) dist: 30
+Deliver to warehouse v2045 total weight: 173 ([v2045(1): 69, v2045(2): 104]) dist: 23
+Deliver to warehouse v1927 total weight: 81 ([v1927(1): 81]) dist: 25
+Distance traveled 114
+Truck 52:
+Deliver to warehouse v1922 total weight: 395 ([v1922(2): 159, v1922(4): 236]) dist: 30
+Deliver to warehouse v2496 total weight: 52 ([v2496(1): 52]) dist: 21
+Deliver to warehouse v2720 total weight: 40 ([v2720(4): 40]) dist: 36
+Distance traveled 122
+Truck 53:
+Deliver to warehouse v2350 total weight: 96 ([v2350(1): 96]) dist: 30
+Deliver to warehouse v2555 total weight: 273 ([v2555(1): 40, v2555(2): 233]) dist: 4
+Deliver to warehouse v2136 total weight: 79 ([v2136(1): 79]) dist: 31
+Deliver to warehouse ucscz total weight: 47 ([ucscz(1): 47]) dist: 43
+Distance traveled 148
+Truck 54:
+Deliver to warehouse v2755 total weight: 194 ([v2755(1): 194]) dist: 30
+Deliver to warehouse umab total weight: 224 ([umab(1): 224]) dist: 19
+Deliver to warehouse v2479 total weight: 57 ([v2479(2): 57]) dist: 31
+Distance traveled 112
+Truck 55:
+Deliver to warehouse clsepf51 total weight: 60 ([clsepf51(1): 60]) dist: 31
+Deliver to warehouse v1863 total weight: 312 ([v1863(1): 114, v1863(2): 198]) dist: 19
+Deliver to warehouse vuctrvx2 total weight: 99 ([vuctrvx2(1): 99]) dist: 29
+Distance traveled 110
+Truck 56:
+Deliver to warehouse uregina2 total weight: 332 ([uregina2(2): 74, uregina2(3): 75, uregina2(1): 183]) dist: 31
+Deliver to warehouse ubvmsa total weight: 166 ([ubvmsa(2): 166]) dist: 28
+Distance traveled 92
+Truck 57:
+Deliver to warehouse v2136 total weight: 94 ([v2136(2): 94]) dist: 31
+Deliver to warehouse v2846 total weight: 139 ([v2846(1): 139]) dist: 21
+Deliver to warehouse tamkbs total weight: 141 ([tamkbs(1): 141]) dist: 28
+Deliver to warehouse snyoneba total weight: 122 ([snyoneba(1): 122]) dist: 37
+Distance traveled 156
+Truck 58:
+Deliver to warehouse emoryu2 total weight: 161 ([emoryu2(1): 161]) dist: 32
+Deliver to warehouse uffsc total weight: 236 ([uffsc(1): 236]) dist: 31
+Deliver to warehouse vpivm3 total weight: 64 ([vpivm3(1): 64]) dist: 23
+Distance traveled 126
+Truck 59:
+Deliver to warehouse iubacs total weight: 155 ([iubacs(1): 155]) dist: 32
+Deliver to warehouse v2983 total weight: 209 ([v2983(2): 209]) dist: 26
+Deliver to warehouse v2231 total weight: 89 ([v2231(1): 89]) dist: 18
+Distance traveled 114
+Truck 60:
+Deliver to warehouse lavalmu1 total weight: 102 ([lavalmu1(1): 102]) dist: 32
+Deliver to warehouse buclln11 total weight: 215 ([buclln11(1): 215]) dist: 35
+Deliver to warehouse hentht5 total weight: 116 ([hentht5(3): 116]) dist: 25
+Deliver to warehouse barilan total weight: 59 ([barilan(3): 59]) dist: 36
+Distance traveled 166
+Truck 61:
+Deliver to warehouse v2687 total weight: 341 ([v2687(1): 165, v2687(3): 176]) dist: 32
+Deliver to warehouse barilan total weight: 97 ([barilan(4): 97]) dist: 18
+Distance traveled 88
+Truck 62:
+Deliver to warehouse v2857 total weight: 193 ([v2857(1): 193]) dist: 33
+Deliver to warehouse v2839 total weight: 203 ([v2839(3): 203]) dist: 31
+Deliver to warehouse ncsuphys total weight: 82 ([ncsuphys(1): 82]) dist: 34
+Distance traveled 144
+Truck 63:
+Deliver to warehouse v2319 total weight: 121 ([v2319(1): 121]) dist: 34
+Deliver to warehouse hentht5 total weight: 324 ([hentht5(4): 148, hentht5(1): 176]) dist: 24
+Distance traveled 98
+Truck 64:
+Deliver to warehouse v2455 total weight: 232 ([v2455(1): 232]) dist: 34
+Deliver to warehouse v2655 total weight: 105 ([v2655(1): 105]) dist: 30
+Deliver to warehouse barilan total weight: 146 ([barilan(2): 146]) dist: 26
+Distance traveled 128
+Truck 65:
+Deliver to warehouse jpnsut20 total weight: 240 ([jpnsut20(1): 240]) dist: 35
+Deliver to warehouse ntsu total weight: 128 ([ntsu(1): 128]) dist: 27
+Deliver to warehouse anlchm total weight: 132 ([anlchm(1): 132]) dist: 27
+Distance traveled 128
+Truck 66:
+Deliver to warehouse si001 total weight: 76 ([si001(1): 76]) dist: 35
+Deliver to warehouse harvard total weight: 300 ([harvard(2): 105, harvard(1): 195]) dist: 30
+Deliver to warehouse v2720 total weight: 78 ([v2720(5): 78]) dist: 46
+Distance traveled 146
+Truck 67:
+Deliver to warehouse unccvm total weight: 99 ([unccvm(1): 99]) dist: 35
+Deliver to warehouse v2496 total weight: 229 ([v2496(2): 229]) dist: 30
+Deliver to warehouse v2720 total weight: 171 ([v2720(3): 171]) dist: 36
+Distance traveled 136
+Truck 68:
+Deliver to warehouse ucsfcgl total weight: 373 ([ucsfcgl(1): 157, ucsfcgl(2): 216]) dist: 36
+Deliver to warehouse jhunix total weight: 76 ([jhunix(1): 76]) dist: 24
+Distance traveled 106
+Truck 69:
+Deliver to warehouse slacucd total weight: 217 ([slacucd(1): 217]) dist: 37
+Deliver to warehouse hroeur1 total weight: 241 ([hroeur1(3): 78, hroeur1(2): 163]) dist: 41
+Distance traveled 116
+Truck 70:
+Deliver to warehouse v2233 total weight: 79 ([v2233(1): 79]) dist: 37
+Deliver to warehouse v1930 total weight: 192 ([v1930(1): 192]) dist: 39
+Deliver to warehouse v2391 total weight: 208 ([v2391(2): 208]) dist: 40
+Distance traveled 160
+Truck 71:
+Deliver to warehouse barilan total weight: 469 ([barilan(5): 227, barilan(1): 242]) dist: 38
+Distance traveled 76
+Truck 72:
+Deliver to warehouse umdt total weight: 79 ([umdt(1): 79]) dist: 38
+Deliver to warehouse ucscz total weight: 205 ([ucscz(2): 205]) dist: 8
+Deliver to warehouse v2071 total weight: 132 ([v2071(4): 132]) dist: 38
+Deliver to warehouse watsci total weight: 63 ([watsci(3): 63]) dist: 42
+Distance traveled 178
+Truck 73:
+Deliver to warehouse v2231 total weight: 432 ([v2231(2): 209, v2231(3): 223]) dist: 38
+Distance traveled 76
+Truck 74:
+Deliver to warehouse ntsuvaxb total weight: 117 ([ntsuvaxb(1): 117]) dist: 39
+Deliver to warehouse hujinix total weight: 113 ([hujinix(1): 113]) dist: 47
+Deliver to warehouse v2081 total weight: 200 ([v2081(1): 87, v2081(3): 113]) dist: 43
+Distance traveled 170
+Truck 75:
+Deliver to warehouse v2071 total weight: 370 ([v2071(1): 161, v2071(2): 209]) dist: 40
+Deliver to warehouse watsci total weight: 71 ([watsci(1): 71]) dist: 42
+Distance traveled 134
+Truck 76:
+Deliver to warehouse v2081 total weight: 211 ([v2081(2): 211]) dist: 41
+Deliver to warehouse jhunix total weight: 125 ([jhunix(2): 125]) dist: 15
+Deliver to warehouse v2289 total weight: 86 ([v2289(1): 86]) dist: 57
+Distance traveled 158
+Truck 77:
+Deliver to warehouse ucbjason total weight: 143 ([ucbjason(1): 143]) dist: 45
+Deliver to warehouse jhuhyg total weight: 348 ([jhuhyg(1): 172, jhuhyg(2): 176]) dist: 42
+Distance traveled 144
+Truck 78:
+Deliver to warehouse ksuvm total weight: 181 ([ksuvm(1): 181]) dist: 46
+Deliver to warehouse v2759 total weight: 234 ([v2759(1): 234]) dist: 66
+Distance traveled 158
+Truck 79:
+Deliver to warehouse v1834 total weight: 164 ([v1834(1): 164]) dist: 46
+Distance traveled 92
+Total distance traveled: 8846

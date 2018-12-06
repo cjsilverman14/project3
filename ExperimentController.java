@@ -14,15 +14,18 @@ public class ExperimentController
     public ExperimentController(){
         center = "A";
     }
-    public void shortestPath(String city){
+
+    public void shortestPath(){
         cityMap.shortestPath(center);
     }
+
     public void setCenterShortestPath(){
         cityMap.shortestPath(center,0);
     }
+
     public static void main(String[] args){
         ExperimentController ec = new ExperimentController();
-        
+
         ec.cargoList = ec.mapCity();
         ec.setCenterShortestPath();
         ec.cityMap.shortestPath(ec.cityMap.getVertex(ec.center));
@@ -39,20 +42,20 @@ public class ExperimentController
         while(incompleteWarehouses != 0){
             Truck t = new Truck(truckNumber);
             truckNumber++;
-            if (truckNumber == 8) {
+            if (truckNumber == 5) {
                 int r = 5;
             }
-            
+
             while(ec.cargoList.get(startingWarehouse).incomingCargo.isEmpty()){
                 startingWarehouse++;
             }
             Warehouse currentWarehouse = ec.cargoList.get(startingWarehouse);
             Shipment s = new Shipment(currentWarehouse.city,500);
-           
+            ec.shortestPath();
             s.setDestination(ec.cityMap.getVertex(s.location));
             s.setDistance();
             s.destination.setClosestCities(ec.cityMap.shortestPath(s.destination));
-            
+
             while(!t.truckReady){
                 boolean shipmentCheck = false;
                 int limit = ec.cargoList.size();
@@ -61,7 +64,6 @@ public class ExperimentController
                     //In the list
                     if(currentWarehouse.incomingCargo.isEmpty()){
                         //warehouseNumber++;
-                        System.out.println(currentWarehouse);
                         currentWarehouse.location.hasWarehouse = false;
                         shipmentCheck = true;
                         if(!currentWarehouse.complete){
@@ -87,16 +89,18 @@ public class ExperimentController
                         if(!closest.get(i).cityWarehouse.incomingCargo.isEmpty() && closest.get(i).cityWarehouse.incomingCargo.get(0).weight <= 500-t.weight){
                             t.truckReady = false;
                             City c = closest.get(i);
+                            ec.cityMap.shortestPath(s.destination);
                             s = new Shipment(closest.get(i).name,500-t.weight);
-                            ec.cityMap.shortestPath(c);
-                            
+                            //ec.cityMap.shortestPath(c);
+
                             s.setDestination(ec.cityMap.getVertex(s.location));
+                            //ec.cityMap.shortestPath(s.destination);
                             s.setDistance();
                             currentWarehouse = closest.get(i).cityWarehouse;
                             break;
                         }
                         else{
-                            
+
                         }
                     }
                     else{
@@ -104,24 +108,35 @@ public class ExperimentController
                         i--;
                     }
                 }
-                
+
             }
             t.returnTrip();
             dispatch.add(t);
-            System.out.println("Truck sent");
         }
         int totalDist = 0;
-        for(Truck t : dispatch){
-            System.out.println(t);
-            totalDist+=t.distanceTraveled;
+        try{
+            PrintWriter output = new PrintWriter("output.txt");
+            for(Truck t : dispatch){
+                System.out.println(t);
+                totalDist+=t.distanceTraveled;
+                output.write(t.toString());
+                output.println();
+            }
+            System.out.println("Total Distance: " + totalDist);
+            output.write("Total Distance: " + totalDist);
+            output.close();
         }
-        System.out.println("Total Distance: " + totalDist);
+        catch(Exception e){
+            System.out.println(e);
+        }
+
     }
     public ArrayList<Warehouse> mapCity(){
         try{
             Scanner fileInput = new Scanner(new FileReader("roads.txt"));
             Scanner fileInput2 = new Scanner(new FileReader("center.txt"));
             Scanner fileInput3 = new Scanner(new FileReader("warehouses.txt"));
+            fileInput.nextLine();
             while(fileInput.hasNextLine()){
                 String line = fileInput.nextLine();
                 String v1 = line.substring(0,line.indexOf(" "));
@@ -133,6 +148,7 @@ public class ExperimentController
             }
             center = fileInput2.nextLine();
             ArrayList<Warehouse> cargoList = new ArrayList<Warehouse>();
+            fileInput3.nextLine();
             while(fileInput3.hasNextLine()){
                 String line = fileInput3.nextLine();
                 String destination = line.substring(0,line.indexOf(" "));
@@ -153,16 +169,16 @@ public class ExperimentController
                 w.cargoSort();
                 cargoList.add(w);
                 cityMap.setWarehouse(w);
-                
+
             }
             Collections.sort(cargoList);
             return cargoList;
         }
         catch(Exception e){
-            
+
             System.out.println(e);
             return null;
         }
-    
+
     }
 }

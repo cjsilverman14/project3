@@ -1,0 +1,574 @@
+Truck 1:
+Deliver to warehouse v2772total weight: 241([v2772(2): 14, v2772(1): 79, v2772(3): 148]) dist: 13
+Deliver to warehouse embltotal weight: 71([embl(2): 71]) dist: 6
+Distance Traveled: 53
+
+Truck 2:
+Deliver to warehouse v2219total weight: 314([v2219(1): 89, v2219(2): 225]) dist: 14
+Deliver to warehouse dgihrz01total weight: 173([dgihrz01(1): 173]) dist: 4
+Distance Traveled: 52
+
+Truck 3:
+Deliver to warehouse embltotal weight: 192([embl(1): 192]) dist: 15
+Deliver to warehouse scrvmsystotal weight: 208([scrvmsys(2): 54, scrvmsys(1): 154]) dist: 6
+Distance Traveled: 61
+
+Truck 4:
+Deliver to warehouse dgihrz01total weight: 184([dgihrz01(2): 184]) dist: 16
+Deliver to warehouse frese51total weight: 158([frese51(1): 158]) dist: 5
+Distance Traveled: 63
+
+Truck 5:
+Deliver to warehouse v2243total weight: 42([v2243(1): 42]) dist: 18
+Deliver to warehouse v1891total weight: 24([v1891(1): 24]) dist: 4
+Distance Traveled: 64
+
+Truck 6:
+Deliver to warehouse djukfa51total weight: 204([djukfa51(1): 204]) dist: 18
+Deliver to warehouse v2280total weight: 255([v2280(2): 126, v2280(1): 129]) dist: 9
+Distance Traveled: 81
+
+Truck 7:
+Deliver to warehouse v2340total weight: 71([v2340(1): 71]) dist: 19
+Deliver to warehouse dm0lrz01total weight: 173([dm0lrz01(1): 173]) dist: 9
+Distance Traveled: 76
+
+Truck 8:
+Deliver to warehouse mcmastertotal weight: 235([mcmaster(1): 235]) dist: 20
+Deliver to warehouse htikub5total weight: 169([htikub5(1): 169]) dist: 4
+Distance Traveled: 68
+
+Truck 9:
+Deliver to warehouse v2827total weight: 163([v2827(1): 163]) dist: 20
+Deliver to warehouse v2641total weight: 247([v2641(3): 102, v2641(1): 145]) dist: 3
+Distance Traveled: 67
+
+Truck 10:
+Deliver to warehouse v2294total weight: 33([v2294(1): 33]) dist: 20
+Deliver to warehouse ucscatotal weight: 439([ucsca(2): 210, ucsca(1): 229]) dist: 8
+Distance Traveled: 76
+
+Truck 11:
+Deliver to warehouse almvmztotal weight: 128([almvmz(1): 128]) dist: 20
+Deliver to warehouse mitwibrtotal weight: 101([mitwibr(1): 101]) dist: 3
+Distance Traveled: 67
+
+Truck 12:
+Deliver to warehouse trfirattotal weight: 195([trfirat(2): 92, trfirat(1): 103]) dist: 20
+Deliver to warehouse v2657total weight: 184([v2657(1): 184]) dist: 3
+Distance Traveled: 69
+
+Truck 13:
+Deliver to warehouse v2118total weight: 14([v2118(1): 14]) dist: 20
+Deliver to warehouse v2555total weight: 273([v2555(1): 40, v2555(2): 233]) dist: 10
+Distance Traveled: 90
+
+Truck 14:
+Deliver to warehouse cornellatotal weight: 93([cornella(1): 93]) dist: 20
+Deliver to warehouse v1972total weight: 94([v1972(1): 94]) dist: 9
+Distance Traveled: 79
+
+Truck 15:
+Deliver to warehouse v2259total weight: 27([v2259(1): 27]) dist: 20
+Deliver to warehouse v2908total weight: 42([v2908(1): 42]) dist: 1
+Distance Traveled: 63
+
+Truck 16:
+Deliver to warehouse v2198total weight: 242([v2198(1): 242]) dist: 20
+Deliver to warehouse sunycbuftotal weight: 68([sunycbuf(1): 68]) dist: 9
+Distance Traveled: 79
+
+Truck 17:
+Deliver to warehouse calstatetotal weight: 14([calstate(1): 14]) dist: 20
+Deliver to warehouse dkauni13total weight: 236([dkauni13(1): 7, dkauni13(2): 229]) dist: 5
+Distance Traveled: 71
+
+Truck 18:
+Deliver to warehouse v2604total weight: 97([v2604(1): 11, v2604(2): 86]) dist: 21
+Deliver to warehouse polytec1total weight: 114([polytec1(1): 44, polytec1(2): 70]) dist: 5
+Distance Traveled: 74
+
+Truck 19:
+Deliver to warehouse v1997total weight: 213([v1997(1): 35, v1997(2): 178]) dist: 21
+Deliver to warehouse luxcep11total weight: 209([luxcep11(1): 209]) dist: 6
+Distance Traveled: 79
+
+Truck 20:
+Deliver to warehouse idcsvaxtotal weight: 273([idcsvax(3): 63, idcsvax(1): 92, idcsvax(2): 118]) dist: 21
+Deliver to warehouse v2052total weight: 72([v2052(1): 72]) dist: 4
+Distance Traveled: 71
+
+Truck 21:
+Deliver to warehouse utsa4381total weight: 210([utsa4381(1): 210]) dist: 21
+Deliver to warehouse grearntotal weight: 251([grearn(1): 90, grearn(2): 161]) dist: 11
+Distance Traveled: 86
+
+Truck 22:
+Deliver to warehouse v2641total weight: 178([v2641(2): 178]) dist: 21
+Deliver to warehouse blekul10total weight: 262([blekul10(3): 46, blekul10(2): 89, blekul10(1): 127]) dist: 11
+Distance Traveled: 86
+
+Truck 23:
+Deliver to warehouse v1899total weight: 371([v1899(2): 134, v1899(3): 237]) dist: 22
+Deliver to warehouse uqvtotal weight: 68([uqv(1): 27, uqv(2): 41]) dist: 14
+Distance Traveled: 98
+
+Truck 24:
+Deliver to warehouse v1899total weight: 244([v1899(1): 244]) dist: 22
+Deliver to warehouse dsihrz51total weight: 160([dsihrz51(1): 160]) dist: 15
+Distance Traveled: 99
+
+Truck 25:
+Deliver to warehouse v2738total weight: 67([v2738(1): 67]) dist: 22
+Deliver to warehouse uordb2total weight: 156([uordb2(1): 156]) dist: 14
+Distance Traveled: 94
+
+Truck 26:
+Deliver to warehouse jpntscvmtotal weight: 217([jpntscvm(1): 217]) dist: 22
+Deliver to warehouse ucccvm1total weight: 69([ucccvm1(1): 69]) dist: 28
+Distance Traveled: 124
+
+Truck 27:
+Deliver to warehouse jpntohoktotal weight: 38([jpntohok(1): 38]) dist: 22
+Deliver to warehouse fnalgtotal weight: 9([fnalg(1): 9]) dist: 12
+Distance Traveled: 98
+
+Truck 28:
+Deliver to warehouse nrcvm01total weight: 182([nrcvm01(1): 182]) dist: 22
+Deliver to warehouse harvunxttotal weight: 141([harvunxt(1): 141]) dist: 13
+Distance Traveled: 95
+
+Truck 29:
+Deliver to warehouse tuftstotal weight: 256([tufts(4): 29, tufts(2): 31, tufts(3): 84, tufts(1): 112]) dist: 22
+Deliver to warehouse uiaecetotal weight: 161([uiaece(1): 71, uiaece(2): 90]) dist: 7
+Distance Traveled: 87
+
+Truck 30:
+Deliver to warehouse mcgill2total weight: 257([mcgill2(3): 63, mcgill2(2): 89, mcgill2(1): 105]) dist: 23
+Deliver to warehouse v2420total weight: 76([v2420(1): 76]) dist: 8
+Distance Traveled: 85
+
+Truck 31:
+Deliver to warehouse v1961total weight: 438([v1961(2): 196, v1961(1): 242]) dist: 23
+Deliver to warehouse v2273total weight: 62([v2273(1): 62]) dist: 8
+Distance Traveled: 87
+
+Truck 32:
+Deliver to warehouse dkakfk51total weight: 361([dkakfk51(3): 19, dkakfk51(2): 136, dkakfk51(4): 206]) dist: 23
+Deliver to warehouse v1888total weight: 4([v1888(1): 4]) dist: 6
+Distance Traveled: 87
+
+Truck 33:
+Deliver to warehouse dkakfk51total weight: 239([dkakfk51(1): 239]) dist: 23
+Deliver to warehouse v1888total weight: 204([v1888(2): 204]) dist: 6
+Distance Traveled: 87
+
+Truck 34:
+Deliver to warehouse v2657total weight: 221([v2657(2): 221]) dist: 23
+Deliver to warehouse finhutctotal weight: 229([finhutc(2): 229]) dist: 3
+Distance Traveled: 78
+
+Truck 35:
+Deliver to warehouse v2179total weight: 180([v2179(1): 180]) dist: 24
+Deliver to warehouse frill51total weight: 72([frill51(1): 72]) dist: 10
+Distance Traveled: 102
+
+Truck 36:
+Deliver to warehouse estectotal weight: 305([estec(1): 80, estec(2): 225]) dist: 24
+Deliver to warehouse uoft01total weight: 118([uoft01(1): 118]) dist: 10
+Distance Traveled: 96
+
+Truck 37:
+Deliver to warehouse qucdntotal weight: 164([qucdn(1): 164]) dist: 24
+Deliver to warehouse piscestotal weight: 232([pisces(4): 56, pisces(1): 70, pisces(2): 106]) dist: 14
+Distance Traveled: 104
+
+Truck 38:
+Deliver to warehouse v2157total weight: 93([v2157(1): 93]) dist: 25
+Deliver to warehouse v2945total weight: 21([v2945(1): 21]) dist: 12
+Distance Traveled: 99
+
+Truck 39:
+Deliver to warehouse ncsuadmtotal weight: 380([ncsuadm(1): 167, ncsuadm(2): 213]) dist: 25
+Deliver to warehouse bingvmatotal weight: 80([bingvma(3): 80]) dist: 8
+Distance Traveled: 91
+
+Truck 40:
+Deliver to warehouse v2473total weight: 71([v2473(1): 71]) dist: 25
+Deliver to warehouse hujivmstotal weight: 244([hujivms(1): 244]) dist: 10
+Distance Traveled: 99
+
+Truck 41:
+Deliver to warehouse v2377total weight: 22([v2377(1): 22]) dist: 25
+Deliver to warehouse v2452total weight: 93([v2452(1): 93]) dist: 18
+Distance Traveled: 119
+
+Truck 42:
+Deliver to warehouse v2564total weight: 110([v2564(1): 110]) dist: 25
+Deliver to warehouse banuia51total weight: 101([banuia51(1): 101]) dist: 12
+Distance Traveled: 101
+
+Truck 43:
+Deliver to warehouse gmuvaxtotal weight: 155([gmuvax(1): 155]) dist: 25
+Deliver to warehouse finhutctotal weight: 246([finhutc(1): 246]) dist: 11
+Distance Traveled: 98
+
+Truck 44:
+Deliver to warehouse polytec2total weight: 17([polytec2(1): 17]) dist: 25
+Deliver to warehouse v2801total weight: 118([v2801(1): 118]) dist: 4
+Distance Traveled: 85
+
+Truck 45:
+Deliver to warehouse bingvmatotal weight: 358([bingvma(1): 147, bingvma(4): 211]) dist: 25
+Deliver to warehouse v2078total weight: 21([v2078(2): 21]) dist: 11
+Distance Traveled: 98
+
+Truck 46:
+Deliver to warehouse bingvmatotal weight: 247([bingvma(2): 247]) dist: 25
+Deliver to warehouse v2078total weight: 157([v2078(1): 157]) dist: 11
+Distance Traveled: 98
+
+Truck 47:
+Deliver to warehouse v2734total weight: 147([v2734(1): 147]) dist: 26
+Deliver to warehouse v2755total weight: 194([v2755(1): 194]) dist: 14
+Distance Traveled: 110
+
+Truck 48:
+Deliver to warehouse acadiatotal weight: 317([acadia(2): 128, acadia(1): 189]) dist: 26
+Deliver to warehouse v2857total weight: 147([v2857(2): 48, v2857(3): 99]) dist: 7
+Distance Traveled: 99
+
+Truck 49:
+Deliver to warehouse v2819total weight: 75([v2819(1): 75]) dist: 26
+Deliver to warehouse v2352total weight: 11([v2352(1): 11]) dist: 13
+Distance Traveled: 117
+
+Truck 50:
+Deliver to warehouse bbrbfu01total weight: 220([bbrbfu01(1): 84, bbrbfu01(2): 136]) dist: 26
+Deliver to warehouse hujinostotal weight: 36([hujinos(1): 36]) dist: 21
+Distance Traveled: 123
+
+Truck 51:
+Deliver to warehouse umiphystotal weight: 52([umiphys(1): 52]) dist: 27
+Deliver to warehouse v1833total weight: 208([v1833(1): 95, v1833(2): 113]) dist: 12
+Distance Traveled: 107
+
+Truck 52:
+Deliver to warehouse v2129total weight: 373([v2129(4): 4, v2129(1): 82, v2129(3): 117, v2129(2): 170]) dist: 27
+Deliver to warehouse yuvenustotal weight: 69([yuvenus(2): 69]) dist: 23
+Distance Traveled: 130
+
+Truck 53:
+Deliver to warehouse harvsphbtotal weight: 93([harvsphb(1): 93]) dist: 27
+Deliver to warehouse caltechtotal weight: 364([caltech(1): 38, caltech(4): 144, caltech(3): 182]) dist: 11
+Distance Traveled: 106
+
+Truck 54:
+Deliver to warehouse v2520total weight: 18([v2520(1): 18]) dist: 27
+Deliver to warehouse v2687total weight: 396([v2687(2): 55, v2687(1): 165, v2687(3): 176]) dist: 5
+Distance Traveled: 96
+
+Truck 55:
+Deliver to warehouse eb0ub013total weight: 205([eb0ub013(1): 205]) dist: 27
+Deliver to warehouse v2659total weight: 101([v2659(1): 19, v2659(2): 82]) dist: 15
+Distance Traveled: 112
+
+Truck 56:
+Deliver to warehouse finuhtotal weight: 184([finuh(2): 53, finuh(1): 131]) dist: 28
+Deliver to warehouse dbiuni11total weight: 16([dbiuni11(1): 16]) dist: 3
+Distance Traveled: 93
+
+Truck 57:
+Deliver to warehouse v2722total weight: 96([v2722(1): 96]) dist: 28
+Deliver to warehouse uoft01total weight: 183([uoft01(2): 183]) dist: 20
+Distance Traveled: 124
+
+Truck 58:
+Deliver to warehouse unlvmtotal weight: 130([unlvm(1): 130]) dist: 28
+Deliver to warehouse v2272total weight: 58([v2272(1): 58]) dist: 13
+Distance Traveled: 113
+
+Truck 59:
+Deliver to warehouse ipdunivtotal weight: 396([ipduniv(1): 197, ipduniv(2): 199]) dist: 28
+Deliver to warehouse iecvm1total weight: 59([iecvm1(1): 59]) dist: 17
+Distance Traveled: 127
+
+Truck 60:
+Deliver to warehouse hujicstotal weight: 491([hujics(5): 62, hujics(3): 73, hujics(4): 166, hujics(2): 190]) dist: 28
+Deliver to warehouse hentht5total weight: 7([hentht5(2): 7]) dist: 26
+Distance Traveled: 148
+
+Truck 61:
+Deliver to warehouse hujicstotal weight: 241([hujics(1): 241]) dist: 28
+Deliver to warehouse lsumvstotal weight: 158([lsumvs(1): 158]) dist: 14
+Distance Traveled: 112
+
+Truck 62:
+Deliver to warehouse utkvx3total weight: 282([utkvx3(3): 70, utkvx3(2): 212]) dist: 28
+Deliver to warehouse dacth51total weight: 194([dacth51(1): 194]) dist: 18
+Distance Traveled: 120
+
+Truck 63:
+Deliver to warehouse utkvx3total weight: 237([utkvx3(1): 237]) dist: 28
+Deliver to warehouse v2469total weight: 41([v2469(1): 41]) dist: 19
+Distance Traveled: 123
+
+Truck 64:
+Deliver to warehouse piscestotal weight: 215([pisces(3): 215]) dist: 28
+Deliver to warehouse v2997total weight: 28([v2997(1): 28]) dist: 15
+Distance Traveled: 117
+
+Truck 65:
+Deliver to warehouse v2659total weight: 199([v2659(3): 199]) dist: 28
+Deliver to warehouse v2397total weight: 60([v2397(1): 60]) dist: 7
+Distance Traveled: 99
+
+Truck 66:
+Deliver to warehouse v2293total weight: 115([v2293(1): 115]) dist: 29
+Deliver to warehouse wyocdc2total weight: 142([wyocdc2(1): 142]) dist: 12
+Distance Traveled: 111
+
+Truck 67:
+Deliver to warehouse harvsc3total weight: 245([harvsc3(1): 77, harvsc3(2): 168]) dist: 29
+Deliver to warehouse harvunxctotal weight: 56([harvunxc(1): 56]) dist: 15
+Distance Traveled: 132
+
+Truck 68:
+Deliver to warehouse uhrcctotal weight: 243([uhrcc(1): 63, uhrcc(2): 180]) dist: 29
+Deliver to warehouse v2834total weight: 168([v2834(1): 168]) dist: 21
+Distance Traveled: 130
+
+Truck 69:
+Deliver to warehouse uottawa2total weight: 287([uottawa2(1): 46, uottawa2(2): 241]) dist: 29
+Deliver to warehouse v2712total weight: 82([v2712(1): 82]) dist: 12
+Distance Traveled: 117
+
+Truck 70:
+Deliver to warehouse ncsumtetotal weight: 102([ncsumte(1): 102]) dist: 29
+Deliver to warehouse cmphystotal weight: 184([cmphys(1): 184]) dist: 14
+Distance Traveled: 123
+
+Truck 71:
+Deliver to warehouse v2685total weight: 248([v2685(1): 248]) dist: 29
+Deliver to warehouse v2861total weight: 66([v2861(1): 66]) dist: 14
+Distance Traveled: 121
+
+Truck 72:
+Deliver to warehouse v2456total weight: 37([v2456(1): 37]) dist: 29
+Deliver to warehouse v2136total weight: 173([v2136(1): 79, v2136(2): 94]) dist: 18
+Distance Traveled: 125
+
+Truck 73:
+Deliver to warehouse weizmanntotal weight: 188([weizmann(1): 188]) dist: 29
+Deliver to warehouse v2891total weight: 10([v2891(1): 10]) dist: 9
+Distance Traveled: 112
+
+Truck 74:
+Deliver to warehouse uwav4total weight: 153([uwav4(1): 153]) dist: 30
+Deliver to warehouse v2978total weight: 118([v2978(1): 9, v2978(4): 14, v2978(2): 37, v2978(3): 58]) dist: 16
+Distance Traveled: 122
+
+Truck 75:
+Deliver to warehouse v2350total weight: 96([v2350(1): 96]) dist: 30
+Deliver to warehouse ncsumaetotal weight: 31([ncsumae(1): 31]) dist: 26
+Distance Traveled: 142
+
+Truck 76:
+Deliver to warehouse v1935total weight: 87([v1935(1): 87]) dist: 30
+Deliver to warehouse v1863total weight: 312([v1863(1): 114, v1863(2): 198]) dist: 18
+Distance Traveled: 138
+
+Truck 77:
+Deliver to warehouse gallubtotal weight: 175([gallub(1): 175]) dist: 30
+Deliver to warehouse yuvenustotal weight: 180([yuvenus(1): 180]) dist: 18
+Distance Traveled: 126
+
+Truck 78:
+Deliver to warehouse v2919total weight: 84([v2919(1): 84]) dist: 30
+Deliver to warehouse barilantotal weight: 302([barilan(3): 59, barilan(4): 97, barilan(2): 146]) dist: 8
+Distance Traveled: 114
+
+Truck 79:
+Deliver to warehouse v1922total weight: 292([v1922(1): 59, v1922(3): 74, v1922(2): 159]) dist: 30
+Deliver to warehouse v2496total weight: 52([v2496(1): 52]) dist: 21
+Distance Traveled: 139
+
+Truck 80:
+Deliver to warehouse v1922total weight: 236([v1922(4): 236]) dist: 30
+Deliver to warehouse v2496total weight: 229([v2496(2): 229]) dist: 21
+Distance Traveled: 139
+
+Truck 81:
+Deliver to warehouse caltechtotal weight: 238([caltech(2): 238]) dist: 30
+Deliver to warehouse rmctotal weight: 33([rmc(1): 33]) dist: 19
+Distance Traveled: 141
+
+Truck 82:
+Deliver to warehouse umabtotal weight: 224([umab(1): 224]) dist: 31
+Deliver to warehouse unccvmtotal weight: 99([unccvm(1): 99]) dist: 6
+Distance Traveled: 109
+
+Truck 83:
+Deliver to warehouse uregina2total weight: 332([uregina2(2): 74, uregina2(3): 75, uregina2(1): 183]) dist: 31
+Deliver to warehouse v2075total weight: 16([v2075(1): 16]) dist: 25
+Distance Traveled: 144
+
+Truck 84:
+Deliver to warehouse clsepf51total weight: 60([clsepf51(1): 60]) dist: 31
+Deliver to warehouse v2471total weight: 45([v2471(1): 45]) dist: 11
+Distance Traveled: 120
+
+Truck 85:
+Deliver to warehouse vuctrvx2total weight: 99([vuctrvx2(1): 99]) dist: 31
+Deliver to warehouse v2983total weight: 253([v2983(1): 5, v2983(3): 39, v2983(2): 209]) dist: 21
+Distance Traveled: 144
+
+Truck 86:
+Deliver to warehouse v2479total weight: 99([v2479(1): 42, v2479(2): 57]) dist: 32
+Deliver to warehouse ntsutotal weight: 128([ntsu(1): 128]) dist: 16
+Distance Traveled: 134
+
+Truck 87:
+Deliver to warehouse emoryu2total weight: 161([emoryu2(1): 161]) dist: 32
+Deliver to warehouse v2846total weight: 223([v2846(2): 84, v2846(1): 139]) dist: 30
+Distance Traveled: 158
+
+Truck 88:
+Deliver to warehouse lavalmu1total weight: 102([lavalmu1(1): 102]) dist: 32
+Deliver to warehouse buclln11total weight: 215([buclln11(1): 215]) dist: 35
+Distance Traveled: 171
+
+Truck 89:
+Deliver to warehouse iubacstotal weight: 155([iubacs(1): 155]) dist: 32
+Deliver to warehouse hroeur1total weight: 287([hroeur1(1): 46, hroeur1(3): 78, hroeur1(2): 163]) dist: 34
+Distance Traveled: 170
+
+Truck 90:
+Deliver to warehouse ubvmsatotal weight: 172([ubvmsa(1): 6, ubvmsa(2): 166]) dist: 33
+Deliver to warehouse jpnsut20total weight: 240([jpnsut20(1): 240]) dist: 30
+Distance Traveled: 161
+
+Truck 91:
+Deliver to warehouse v2857total weight: 193([v2857(1): 193]) dist: 33
+Deliver to warehouse v2839total weight: 207([v2839(1): 32, v2839(2): 175]) dist: 31
+Distance Traveled: 162
+
+Truck 92:
+Deliver to warehouse v2632total weight: 55([v2632(1): 55]) dist: 33
+Deliver to warehouse hentht5total weight: 331([hentht5(5): 67, hentht5(3): 116, hentht5(4): 148]) dist: 17
+Distance Traveled: 140
+
+Truck 93:
+Deliver to warehouse v2839total weight: 203([v2839(3): 203]) dist: 34
+Deliver to warehouse hentht5total weight: 176([hentht5(1): 176]) dist: 28
+Distance Traveled: 164
+
+Truck 94:
+Deliver to warehouse v2319total weight: 121([v2319(1): 121]) dist: 34
+Deliver to warehouse v2071total weight: 310([v2071(3): 17, v2071(4): 132, v2071(1): 161]) dist: 32
+Distance Traveled: 172
+
+Truck 95:
+Deliver to warehouse v2455total weight: 232([v2455(1): 232]) dist: 34
+Deliver to warehouse v1927total weight: 81([v1927(1): 81]) dist: 30
+Distance Traveled: 164
+
+Truck 96:
+Deliver to warehouse v2720total weight: 316([v2720(1): 10, v2720(2): 17, v2720(4): 40, v2720(5): 78, v2720(3): 171]) dist: 35
+Deliver to warehouse ucsccrljtotal weight: 10([ucsccrlj(1): 10]) dist: 28
+Distance Traveled: 165
+
+Truck 97:
+Deliver to warehouse si001total weight: 76([si001(1): 76]) dist: 35
+Deliver to warehouse harvardtotal weight: 300([harvard(2): 105, harvard(1): 195]) dist: 30
+Distance Traveled: 175
+
+Truck 98:
+Deliver to warehouse v2679total weight: 47([v2679(1): 19, v2679(2): 28]) dist: 36
+Deliver to warehouse v2081total weight: 411([v2081(1): 87, v2081(3): 113, v2081(2): 211]) dist: 31
+Distance Traveled: 175
+
+Truck 99:
+Deliver to warehouse ucsfcgltotal weight: 373([ucsfcgl(1): 157, ucsfcgl(2): 216]) dist: 36
+Deliver to warehouse v2847total weight: 12([v2847(1): 12]) dist: 16
+Distance Traveled: 144
+
+Truck 100:
+Deliver to warehouse slacucdtotal weight: 217([slacucd(1): 217]) dist: 37
+Deliver to warehouse ncsuphystotal weight: 82([ncsuphys(1): 82]) dist: 41
+Distance Traveled: 202
+
+Truck 101:
+Deliver to warehouse v2233total weight: 79([v2233(1): 79]) dist: 37
+Deliver to warehouse uffsctotal weight: 236([uffsc(1): 236]) dist: 30
+Distance Traveled: 175
+
+Truck 102:
+Deliver to warehouse v2231total weight: 298([v2231(1): 89, v2231(2): 209]) dist: 38
+Deliver to warehouse v2045total weight: 173([v2045(1): 69, v2045(2): 104]) dist: 39
+Distance Traveled: 193
+
+Truck 103:
+Deliver to warehouse v2231total weight: 223([v2231(3): 223]) dist: 38
+Deliver to warehouse v2071total weight: 209([v2071(2): 209]) dist: 34
+Distance Traveled: 184
+
+Truck 104:
+Deliver to warehouse barilantotal weight: 469([barilan(5): 227, barilan(1): 242]) dist: 38
+Deliver to warehouse hujinixtotal weight: 22([hujinix(2): 22]) dist: 44
+Distance Traveled: 206
+
+Truck 105:
+Deliver to warehouse umdttotal weight: 79([umdt(1): 79]) dist: 38
+Deliver to warehouse ucscztotal weight: 281([ucscz(3): 29, ucscz(1): 47, ucscz(2): 205]) dist: 8
+Distance Traveled: 132
+
+Truck 106:
+Deliver to warehouse v1930total weight: 192([v1930(1): 192]) dist: 38
+Deliver to warehouse snyonebatotal weight: 122([snyoneba(1): 122]) dist: 39
+Distance Traveled: 193
+
+Truck 107:
+Deliver to warehouse v2655total weight: 105([v2655(1): 105]) dist: 38
+Deliver to warehouse db0tuz01total weight: 33([db0tuz01(1): 33]) dist: 50
+Distance Traveled: 220
+
+Truck 108:
+Deliver to warehouse ntsuvaxbtotal weight: 117([ntsuvaxb(1): 117]) dist: 39
+Deliver to warehouse vpivm3total weight: 64([vpivm3(1): 64]) dist: 43
+Distance Traveled: 204
+
+Truck 109:
+Deliver to warehouse anlchmtotal weight: 132([anlchm(1): 132]) dist: 39
+Deliver to warehouse v1834total weight: 164([v1834(1): 164]) dist: 41
+Distance Traveled: 206
+
+Truck 110:
+Deliver to warehouse hujinixtotal weight: 113([hujinix(1): 113]) dist: 42
+Deliver to warehouse v2391total weight: 210([v2391(1): 2, v2391(2): 208]) dist: 44
+Distance Traveled: 216
+
+Truck 111:
+Deliver to warehouse tamkbstotal weight: 141([tamkbs(1): 141]) dist: 42
+Deliver to warehouse watscitotal weight: 160([watsci(2): 26, watsci(3): 63, watsci(1): 71]) dist: 52
+Distance Traveled: 240
+
+Truck 112:
+Deliver to warehouse v2289total weight: 86([v2289(1): 86]) dist: 45
+Deliver to warehouse jhunixtotal weight: 201([jhunix(1): 76, jhunix(2): 125]) dist: 57
+Distance Traveled: 250
+
+Truck 113:
+Deliver to warehouse ucbjasontotal weight: 143([ucbjason(1): 143]) dist: 45
+Deliver to warehouse jhuhygtotal weight: 348([jhuhyg(1): 172, jhuhyg(2): 176]) dist: 42
+Distance Traveled: 231
+
+Truck 114:
+Deliver to warehouse v2759total weight: 458([v2759(2): 224, v2759(1): 234]) dist: 46
+Distance Traveled: 138
+
+Truck 115:
+Deliver to warehouse ksuvmtotal weight: 181([ksuvm(1): 181]) dist: 46
+Distance Traveled: 138
+
+Total Distance: 8826

@@ -23,7 +23,8 @@ public class Truck
             shipmentLines+="\n";
             distanceTraveled += s.distance;
         }
-        return("Truck " + truckNumber + ":\n" + shipmentLines);
+        return("Truck " + truckNumber + ":\n" + shipmentLines + "Distance Traveled: " + distanceTraveled + "\n");
+        
     }
     public void addDist(int x){
         distanceTraveled += x;
