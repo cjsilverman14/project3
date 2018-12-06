@@ -55,6 +55,22 @@ public class ShipmentTesting
         assert(s.addCargo(c1) && s.addCargo(c2) && !s.addCargo(c3));
     }
     
+    @Test
+    public void printShipment(){
+        Cargo c1 = new Cargo(56,"A",1);
+        Cargo c2 = new Cargo(67,"A",2);
+        Cargo c3 = new Cargo(123,"A",3);
+        Shipment s = new Shipment("A",300);
+        City c = new City("A");
+        c.dist = 5;
+        s.setDestination(c);
+        s.setDistance();
+        s.addCargo(c1);
+        s.addCargo(c2);
+        s.addCargo(c3);
+        String answer = ("Deliver to warehouse A total weight: " + (56+67+123) + "([A(1): 56, A(2): 67, A(3): 123]) dist: 5");
+    }
+    
     /**
      * Tears down the test fixture.
      *
