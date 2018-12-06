@@ -9,31 +9,38 @@ public class Truck
 {
     int truckNumber;
     int distanceTraveled;
+    int loggedDistance = 0;
     boolean truckReady = false;
     int weight = 0;
     ArrayList<Shipment> shipList = new ArrayList<Shipment>();
     public Truck(int t){
         truckNumber = t;
     }
-    @Override
-    public String toString(){
+
+    public ArrayList<String> printStrings(){
         String shipmentLines = "";
+        ArrayList<String> output = new ArrayList<String>();
+        output.add("Truck " + truckNumber + ":");
         for(Shipment s : shipList){
-            shipmentLines+=s.toString();
-            shipmentLines+="\n";
+            output.add(s.toString());
             distanceTraveled += s.distance;
         }
-        return("Truck " + truckNumber + ":\n" + shipmentLines + "Distance Traveled: " + distanceTraveled + "\n");
-        
+        if(loggedDistance ==0){
+            loggedDistance = distanceTraveled;
+        }
+        output.add("Distance Traveled: " + loggedDistance);
+        return output;
+
     }
+
     /*public void addDist(int x){
-        distanceTraveled += x;
+    distanceTraveled += x;
     }*/
     public void addShipment(Shipment s){
-        System.out.println(s.distance);
         shipList.add(s);
         weight+=s.weight;
     }
+
     public void returnTrip(){
         distanceTraveled+= shipList.get(shipList.size()-1).getReturnDist();
     }

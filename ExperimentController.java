@@ -30,10 +30,6 @@ public class ExperimentController
         ec.setCenterShortestPath();
         ec.cityMap.shortestPath(ec.cityMap.getVertex(ec.center));
         Collections.sort(ec.cargoList);
-        /**
-         * 
-         * CHANGE WAREHOUSE NUMBER TO FIND THE WAREHOUSE USING BINARY SEARCH
-         */
 
         ArrayList<Truck> dispatch = new ArrayList<Truck>();
         int truckNumber=1;
@@ -58,7 +54,6 @@ public class ExperimentController
             while(!t.truckReady){
                 s.destination.setClosestCities(ec.cityMap.shortestPath(s.destination));
                 boolean shipmentCheck = false;
-                int limit = ec.cargoList.size();
                 while(!shipmentCheck){
                     //This needs to be changed not only to access the first warehouse
                     //In the list
@@ -117,10 +112,12 @@ public class ExperimentController
         try{
             PrintWriter output = new PrintWriter("output.txt");
             for(Truck t : dispatch){
-                System.out.println(t);
-                totalDist+=t.distanceTraveled;
-                output.write(t.toString());
-                output.println();
+                totalDist += t.distanceTraveled;
+                ArrayList<String> truckLines = t.printStrings();
+                for(String s : truckLines){
+                    output.write(s);
+                    output.println();
+                }
             }
             System.out.println("Total Distance: " + totalDist);
             output.write("Total Distance: " + totalDist);
