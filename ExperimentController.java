@@ -130,9 +130,10 @@ public class ExperimentController
                     output.write(s);
                     output.println();
                 }
+                output.println();
                 totalDist += t.distanceTraveled;
             }
-            System.out.println("Total Distance: " + totalDist);
+            //System.out.println("Total Distance: " + totalDist);
             output.write("Total Distance: " + totalDist);
             output.close();
         }
