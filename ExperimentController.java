@@ -13,14 +13,16 @@ public class ExperimentController
     String roadsFile;
     String centerFile;
     String warehouseFile;
+    boolean smallData = false;
     ArrayList<Warehouse> cargoList;
     public ExperimentController(){
         center = "A";
         roadsFile = "roads.txt";
         centerFile = "center.txt";
         warehouseFile = "warehouses.txt";
+        smallData = true;
     }
-    
+
     public void smallData(){
         roadsFile = "roadsS.txt";
         centerFile = "centerS.txt";
@@ -142,16 +144,20 @@ public class ExperimentController
         }
 
     }
-    
 
     public ArrayList<Warehouse> mapCity(){
         try{
             Scanner fileInput = new Scanner(new FileReader(roadsFile));
             Scanner fileInput2 = new Scanner(new FileReader(centerFile));
             Scanner fileInput3 = new Scanner(new FileReader(warehouseFile));
-            fileInput.nextLine();
+            if(!smallData){
+                fileInput.nextLine();
+            }
             while(fileInput.hasNextLine()){
                 String line = fileInput.nextLine();
+                if(line.length() < 3){
+                    line = fileInput.nextLine();
+                }
                 String v1 = line.substring(0,line.indexOf(" "));
                 line = line.substring(line.indexOf(" ")+1);
                 String v2 = line.substring(0,line.indexOf(" "));
@@ -161,7 +167,9 @@ public class ExperimentController
             }
             center = fileInput2.nextLine();
             ArrayList<Warehouse> cargoList = new ArrayList<Warehouse>();
-            fileInput3.nextLine();
+            if(!smallData){
+                fileInput3.nextLine();
+            }
             while(fileInput3.hasNextLine()){
                 String line = fileInput3.nextLine();
                 String destination = line.substring(0,line.indexOf(" "));

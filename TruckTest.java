@@ -72,8 +72,6 @@ public class TruckTest
         ArrayList<String> test = t.printStrings();
         boolean check = true;
         for(int i = 0;i<test.size();i++){
-            System.out.println(answer.get(i));
-            System.out.println(test.get(i));
             if(!test.get(i).equals(answer.get(i))){
                 check = false;
             }
