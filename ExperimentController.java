@@ -21,7 +21,7 @@ public class ExperimentController
         roadsFile = "roads.txt";
         centerFile = "center.txt";
         warehouseFile = "warehouses.txt";
-        smallData = true;
+        smallData = false;
     }
 
     public void smallData(){
@@ -29,6 +29,7 @@ public class ExperimentController
         roadsFile = "roadsS.txt";
         centerFile = "centerS.txt";
         warehouseFile = "warehousesS.txt";
+        smallData = true;
     }
 
     public void shortestPath(){

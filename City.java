@@ -22,7 +22,7 @@ public class City implements Comparable<City>
     }
     
     @Override
-    public int compareTo(City c){
+    public int compareTo(City c){//Sorts cities by distance, then by name
         if(dist - c.dist!=0){
             return dist-c.dist;
         }
@@ -31,13 +31,13 @@ public class City implements Comparable<City>
         }
     }
     
-    public void setWarehouse(Warehouse w){
+    public void setWarehouse(Warehouse w){//Links a city with its warehouse
         cityWarehouse = w;
         w.location = this;
         hasWarehouse = true;
     }
     
-    public void setClosestCities(ArrayList<City> cityList){
+    public void setClosestCities(ArrayList<City> cityList){//Sets the closestCities arrayList with all other cities in order of distance
         closestCities = cityList;
         shortestSet = true;
     }

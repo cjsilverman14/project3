@@ -29,6 +29,7 @@ public class Graph {
         return v;
     }
 
+    //Marks cities with warehouses
     public void hasWarehouse(String name){
         City v = vertexMap.get(name);
         if(!v.hasWarehouse){
@@ -36,6 +37,7 @@ public class Graph {
         }
     }
 
+    //Links cities and warehouses
     public void setWarehouse(Warehouse w){
         City v = vertexMap.get(w.city);
         v.setWarehouse(w);
@@ -92,7 +94,7 @@ public class Graph {
 
     /* find the shortest path from the given start vertex */
 
-    public void shortestPath(String startCity){
+    public void shortestPath(String startCity){//Makes it easier to run the function from ExperimentController
         this.shortestPath(this.getVertex(startCity));
     }
 
@@ -122,7 +124,8 @@ public class Graph {
         return closestCities;
 
     }
-    public void shortestPath(String startCity,int x){
+    
+    public void shortestPath(String startCity,int x){//The int x just makes it separate. These shortestPath methods store the centerDist variable
         this.shortestPath(this.getVertex(startCity),x);
     }
 
@@ -151,6 +154,8 @@ public class Graph {
         }
     }
 
+    
+    //Returns the distance 
     public int returnDist(String s){
         City c = getVertex(s);
         return c.dist;
