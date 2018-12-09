@@ -28,7 +28,11 @@ public class Warehouse implements Comparable<Warehouse>
             return city.compareTo(w.city);
         }
     }
-    public ArrayList<Cargo> getIncomingCargo(){
-        return incomingCargo;
+    public String [] incomingCargoToArray(){
+        String [] cargoList = new String [incomingCargo.size()];
+        for(int i=0; i<incomingCargo.size(); i++){
+            cargoList[i] = incomingCargo.get(i).toString();
+        }
+        return cargoList;
     }
 }

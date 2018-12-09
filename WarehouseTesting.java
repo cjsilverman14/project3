@@ -39,17 +39,16 @@ public class WarehouseTesting
         w1.addCargo(new Cargo(30, "Addison", 3));
         w1.addCargo(new Cargo(40, "Butka", 4));
         w1.addCargo(new Cargo(50, "Goldwait", 5));
-        Object [] theAns = w1.getIncomingCargo().toArray();
+        Object [] theAns = w1.incomingCargoToArray();
         
-        ArrayList<Cargo> truAns = new ArrayList<Cargo>();
-        truAns.add(new Cargo(10, "CJ", 1));
-        truAns.add(new Cargo(20, "Silverman", 2));
-        truAns.add(new Cargo(30, "Addison", 3));
-        truAns.add(new Cargo(40, "Butka", 4));
-        truAns.add(new Cargo(50, "Goldwait", 5));
-        Object [] trueAns = truAns.toArray();
+        String [] truAns = new String[5];
+        truAns[0] = (new Cargo(10, "CJ", 1)).toString();
+        truAns[1] = (new Cargo(20, "Silverman", 2)).toString();
+        truAns[2] = (new Cargo(30, "Addison", 3)).toString();
+        truAns[3] = (new Cargo(40, "Butka", 4)).toString();
+        truAns[4] = (new Cargo(50, "Goldwait", 5)).toString();
         
-        assertArrayEquals(theAns, trueAns);
+        assertArrayEquals(theAns, truAns);
     }
     
     @Test
@@ -58,22 +57,20 @@ public class WarehouseTesting
         Warehouse w1 = new Warehouse("Boston");
         c1.setWarehouse(w1);
     
-        w1.addCargo(new Cargo(10, "CJ", 1));
-        w1.addCargo(new Cargo(20, "Silverman", 2));
-        w1.addCargo(new Cargo(30, "Addison", 3));
+        w1.addCargo(new Cargo(50, "CJ", 1));
+        w1.addCargo(new Cargo(30, "Silverman", 2));
+        w1.addCargo(new Cargo(20, "Addison", 3));
         w1.addCargo(new Cargo(40, "Butka", 4));
-        w1.addCargo(new Cargo(50, "Goldwait", 5));
+        w1.addCargo(new Cargo(10, "Goldwait", 5));
         w1.cargoSort();
-        Object [] theAns = w1.getIncomingCargo().toArray();
+        Object [] theAns = w1.incomingCargoToArray();
         
-        ArrayList<Cargo> ans = new ArrayList<Cargo>();
-        ans.add(new Cargo(10, "CJ", 1));
-        ans.add(new Cargo(20, "Silverman", 2));
-        ans.add(new Cargo(30, "Addison", 3));
-        ans.add(new Cargo(40, "Butka", 4));
-        ans.add(new Cargo(50, "Goldwait", 5));
-        Collections.sort(ans);
-        Object [] truAns = ans.toArray();
+        String [] truAns = new String[5];
+        truAns[0] = (new Cargo(10, "Goldwait", 5)).toString();
+        truAns[1] = (new Cargo(20, "Addison", 3)).toString();
+        truAns[2] = (new Cargo(30, "Silverman", 2)).toString();
+        truAns[3] = (new Cargo(40, "Butka", 4)).toString();
+        truAns[4] = (new Cargo(50, "CJ", 1)).toString();
         
         assertArrayEquals(theAns, truAns);
     }
