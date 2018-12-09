@@ -39,7 +39,7 @@ public class WarehouseTesting
         w1.addCargo(new Cargo(30, "Addison", 3));
         w1.addCargo(new Cargo(40, "Butka", 4));
         w1.addCargo(new Cargo(50, "Goldwait", 5));
-        
+        Object [] theAns = w1.getIncomingCargo().toArray();
         
         ArrayList<Cargo> truAns = new ArrayList<Cargo>();
         truAns.add(new Cargo(10, "CJ", 1));
@@ -47,8 +47,9 @@ public class WarehouseTesting
         truAns.add(new Cargo(30, "Addison", 3));
         truAns.add(new Cargo(40, "Butka", 4));
         truAns.add(new Cargo(50, "Goldwait", 5));
+        Object [] trueAns = truAns.toArray();
         
-        assertArrayEquals(w1.getIncomingCargo().toArray(), truAns.toArray());
+        assertArrayEquals(theAns, trueAns);
     }
     
     @Test
