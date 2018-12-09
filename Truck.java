@@ -17,7 +17,7 @@ public class Truck
         truckNumber = t;
     }
 
-    public ArrayList<String> printStrings(){
+    public ArrayList<String> printStrings(){//Converts the truck data into an ArrayList of strings in order to make it easier to print to a file
         String shipmentLines = "";
         ArrayList<String> output = new ArrayList<String>();
         output.add("Truck " + truckNumber + ":");
@@ -33,16 +33,12 @@ public class Truck
 
     }
 
-    /*public void addDist(int x){
-    distanceTraveled += x;
-    }*/
-    public void addShipment(Shipment s){
+    public void addShipment(Shipment s){//Adds a shipment to a truck
         shipList.add(s);
         weight+=s.weight;
     }
 
-    public void returnTrip(){
+    public void returnTrip(){//Adds the distance it takes to get back to the center
         distanceTraveled+= shipList.get(shipList.size()-1).getReturnDist();
     }
-    //Test test test
 }

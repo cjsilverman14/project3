@@ -10,18 +10,18 @@ public class Cargo implements Comparable<Cargo>
     int weight;
     String destination;
     int ID;
-    public Cargo(int w,String d, int i){
+    public Cargo(int w,String d, int i){//Creates the cargo object using relevant data
         weight = w;
         destination = d;
         ID = i;
     }
     
     @Override
-    public String toString(){
+    public String toString(){//Prings out the cargo object in the format shown in the result.txt file
         return(destination + "(" + ID + "): " + weight);
     }
     
-    public int compareTo(Cargo c){
+    public int compareTo(Cargo c){//Compares cargo by weight
         return weight-c.weight;
     }
 }
