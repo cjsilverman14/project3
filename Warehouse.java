@@ -28,4 +28,7 @@ public class Warehouse implements Comparable<Warehouse>
             return city.compareTo(w.city);
         }
     }
+    public ArrayList<Cargo> getIncomingCargo(){
+        return incomingCargo;
+    }
 }
