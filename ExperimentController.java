@@ -1,9 +1,9 @@
 import java.util.*;
 import java.io.*;
 /**
- * Write a description of class ExperimentController here.
- *
- * @author (your name)
+ * The ExperimentController class
+ * Where everything is run. Uses the large data set by default, but can be changed to use the small data set with the smallData method
+ * 
  * @version 11/30/18
  */
 public class ExperimentController

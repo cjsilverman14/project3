@@ -1,9 +1,6 @@
 import java.util.*;
 /**
- * Write a description of class City here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Taken from the original graph.java class
  */
 public class City implements Comparable<City>
 {

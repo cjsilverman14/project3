@@ -1,9 +1,10 @@
 import java.util.*;
 /**
- * Write a description of class Warehouse here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * The Warehouse class
+ * 
+ * Stores an ArrayList of cargo and is linked with a city
+ * 
+ * @version 12/4/18
  */
 public class Warehouse implements Comparable<Warehouse>
 {
