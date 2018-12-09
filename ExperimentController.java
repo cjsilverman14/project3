@@ -21,7 +21,7 @@ public class ExperimentController
         roadsFile = "roads.txt";
         centerFile = "center.txt";
         warehouseFile = "warehouses.txt";
-        smallData = true;
+        smallData = false;
     }
 
     public void smallData(){
@@ -29,6 +29,7 @@ public class ExperimentController
         roadsFile = "roadsS.txt";
         centerFile = "centerS.txt";
         warehouseFile = "warehousesS.txt";
+        smallData = true;
     }
 
     public void shortestPath(){
@@ -146,6 +147,7 @@ public class ExperimentController
             //System.out.println("Total Distance: " + totalDist);
             output.write("Total Distance: " + totalDist);
             output.close();
+            System.out.println("All data successfully printed to output.txt");
         }
         catch(Exception e){
             System.out.println(e);
@@ -164,7 +166,7 @@ public class ExperimentController
             }
             while(fileInput.hasNextLine()){//Takes each line and divides it up into the two cities it connects and the weight, then adds that edge and vertices
                 String line = fileInput.nextLine();
-                if(line.length() < 3){
+                if(line.length() < 3){//This was created for unit tests as it was having a hard time reading the small input files
                     line = fileInput.nextLine();
                 }
                 String v1 = line.substring(0,line.indexOf(" "));
