@@ -1,8 +1,9 @@
 import java.util.*;
 /**
- * Write a description of class Truck here.
- *
- * @author (your name)
+ * The Truck class
+ * 
+ * Stores shipments that are going on the same truck. Uses an integer to represent the max weight that can be on a truck
+ * 
  * @version 11/30/18
  */
 public class Truck

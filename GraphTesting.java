@@ -31,7 +31,7 @@ public class GraphTesting
     }
 
     @Test
-    public void fillCityTest(){
+    public void fillCityTest(){//Tests the creation of a graph (using the small data set)
         ExperimentController ec = new ExperimentController();
         ec.smallData();
         ec.mapCity();

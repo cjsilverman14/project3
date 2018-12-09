@@ -1,8 +1,9 @@
 import java.util.*;
 /**
- * Write a description of class Shipment here.
- *
- * @author (your name)
+ * The Shipment Class
+ * 
+ * Stores an arrayList of cargo that is going on the same truck to the same place
+ * 
  * @version 11/30/18
  */
 public class Shipment

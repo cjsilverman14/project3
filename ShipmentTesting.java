@@ -31,13 +31,13 @@ public class ShipmentTesting
     }
 
     @Test
-    public void createShipment(){
+    public void createShipment(){//Tests the creation of a shipment
         Shipment s = new Shipment("Town Name", 67);
         assert(s.maxWeight == 67 && s.location.equals("Town Name"));
     }
     
     @Test
-    public void cityShipment(){
+    public void cityShipment(){//Tests linking a city with a shipment
         City c = new City("Townsville");
         c.dist = 5;
         Shipment s = new Shipment("Townsville",67);
@@ -47,7 +47,7 @@ public class ShipmentTesting
     }
     
     @Test
-    public void loadCargo(){
+    public void loadCargo(){//Tests adding cargo to a Shipment of size 200
         Cargo c1 = new Cargo(56,"A",1);
         Cargo c2 = new Cargo(67,"A",3);
         Cargo c3 = new Cargo(123,"A",2);
@@ -56,7 +56,7 @@ public class ShipmentTesting
     }
     
     @Test
-    public void printShipment(){
+    public void printShipment(){//Tests the toString method of a shipment
         Cargo c1 = new Cargo(56,"A",1);
         Cargo c2 = new Cargo(67,"A",2);
         Cargo c3 = new Cargo(123,"A",3);

@@ -1,8 +1,9 @@
 
 /**
- * Write a description of class Cargo here.
- *
- * @author (your name)
+ * The Cargo class
+ * 
+ * Stores a weight, id, and destination. Smaller cargos are shipped first
+ * 
  * @version 11/30/18
  */
 public class Cargo implements Comparable<Cargo>
